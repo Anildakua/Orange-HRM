@@ -66,10 +66,6 @@ public class loginPage extends BassClass {
 		hm.user_dropdown().click();
 		Thread.sleep(2000);
 		hm.logout().click();
-		loginPOM pom=new loginPOM(driver);
-		Thread.sleep(2000);
-		pom.username().sendKeys("Rocky");
-		pom.password().sendKeys("Rocky@123");
-		pom.button().click();
+	
 	}
 }
