@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import BasePackage.BassClass;
 import ExcelDataPackage.excelUtil;
+import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
@@ -14,6 +15,7 @@ import propertiePackage.propartieClass;
 
 public class loginPage extends BassClass {
 
+	HomepagePOM home;
 	int cell = 0;
 	@Test (priority = 0)
 	public void login() throws Exception {
@@ -39,11 +41,10 @@ public class loginPage extends BassClass {
 	
 	@Test (priority = 1)
 	public void Home() throws Exception {
-		
-		HomepagePOM home=new HomepagePOM(driver);
-		home.Admin();
-		Thread.sleep(2000);
-		driver.navigate().back();
+		home=new HomepagePOM(driver);
+//		home.Admin();
+//		Thread.sleep(2000);
+//		driver.navigate().back();
 		home.PIM();
 		Thread.sleep(2000);
 		
@@ -66,13 +67,21 @@ public class loginPage extends BassClass {
 		pim.save_button().click();
 	}
 	
-	
 	@Test (priority = 3)
-	public void logout() throws Exception {
-		HomepagePOM hm=new HomepagePOM(driver);
-		hm.user_dropdown().click();
+	public void userCredential() throws Exception {
+		AdminPOM admin=new AdminPOM(driver);
+		home.Admin();
 		Thread.sleep(2000);
-		hm.logout().click();
-	
+		admin.emp_name().sendKeys(pr.proparties("Admin_EMP"));
+		admin.emp_dropdown().click();
+		admin.search_b().click();
 	}
+//	@Test (priority = 4)
+//	public void logout() throws Exception {
+//		HomepagePOM hm=new HomepagePOM(driver);
+//		hm.user_dropdown().click();
+//		Thread.sleep(2000);
+//		hm.logout().click();
+//	
+//	}
 }
