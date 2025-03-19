@@ -78,6 +78,7 @@ public class loginPage extends BassClass {
 		Thread.sleep(2000);
 		admin.search_b().click();
 		admin.edit();
+		admin.role_dropdown().click();
 		
 	}
 //	@Test (priority = 4)
