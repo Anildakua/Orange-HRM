@@ -1,13 +1,12 @@
 package LoginPage;
 
 
-import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import BasePackage.BassClass;
+import ExcelDataPackage.excelUtil;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
@@ -15,19 +14,27 @@ import propertiePackage.propartieClass;
 
 public class loginPage extends BassClass {
 
+	int cell = 0;
 	@Test (priority = 0)
 	public void login() throws Exception {
 		
-		
-		String name=pr.proparties("username");
-		String pass=pr.proparties("password");
+//		String name=pr.proparties("username");
+//		String pass=pr.proparties("password");	
+        String name = null;
+		String pass = null;
+		cell++;
+		for (int row = 0; row <= 2; row++) {
+				if (row<=1) {
+					name=excelUtil.data("Sheet1", row, cell);
+				} else {
+					pass=excelUtil.data("Sheet1", row, cell);
+				}
+		}
 		loginPOM pom=new loginPOM(driver);
 		Thread.sleep(2000);
 		pom.username().sendKeys(name);
 		pom.password().sendKeys(pass);
 		pom.button().click();
-		
-		
 	}
 	
 	@Test (priority = 1)
