@@ -55,8 +55,8 @@ public class loginPage extends BassClass {
 		pim_POM pim=new pim_POM(driver);
 		pim.addEmp();
 		Thread.sleep(2000);
-		pim.firstname().sendKeys("rocky");
-		pim.lastName().sendKeys("bhai");
+		pim.firstname().sendKeys(pr.proparties("Firstname"));
+		pim.lastName().sendKeys(pr.proparties("Lasrname"));
 		Thread.sleep(2000);
 		pim.cld().click();
 		Thread.sleep(2000);
@@ -73,8 +73,12 @@ public class loginPage extends BassClass {
 		home.Admin();
 		Thread.sleep(2000);
 		admin.emp_name().sendKeys(pr.proparties("Admin_EMP"));
+		Thread.sleep(2000);
 		admin.emp_dropdown().click();
+		Thread.sleep(2000);
 		admin.search_b().click();
+		admin.edit();
+		
 	}
 //	@Test (priority = 4)
 //	public void logout() throws Exception {

@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-19T15:26:06 IST" name="Default suite" finished-at="2025-03-19T15:26:36 IST" duration-ms="30302">
+  <suite started-at="2025-03-19T15:54:54 IST" name="Default suite" finished-at="2025-03-19T15:55:29 IST" duration-ms="35299">
     <groups>
     </groups>
-    <test started-at="2025-03-19T15:26:06 IST" name="Default test" finished-at="2025-03-19T15:26:36 IST" duration-ms="30302">
+    <test started-at="2025-03-19T15:54:54 IST" name="Default test" finished-at="2025-03-19T15:55:29 IST" duration-ms="35299">
       <class name="LoginPage.loginPage">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:06 IST" name="beforeClass" finished-at="2025-03-19T15:26:09 IST" duration-ms="3708" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:54:54 IST" name="beforeClass" finished-at="2025-03-19T15:54:58 IST" duration-ms="3770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:09 IST" name="beforeMethod" finished-at="2025-03-19T15:26:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:54:58 IST" name="beforeMethod" finished-at="2025-03-19T15:54:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:09 IST" name="login" finished-at="2025-03-19T15:26:12 IST" duration-ms="2652" status="PASS">
+        <test-method signature="login()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:54:58 IST" name="login" finished-at="2025-03-19T15:55:01 IST" duration-ms="2681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:12 IST" name="afterMethod" finished-at="2025-03-19T15:26:15 IST" duration-ms="3024" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:01 IST" name="afterMethod" finished-at="2025-03-19T15:55:04 IST" duration-ms="3200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:15 IST" name="beforeMethod" finished-at="2025-03-19T15:26:15 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Home()[pri:1, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:15 IST" name="Home" finished-at="2025-03-19T15:26:18 IST" duration-ms="2737" status="PASS">
+        <test-method signature="Home()[pri:1, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:04 IST" name="Home" finished-at="2025-03-19T15:55:07 IST" duration-ms="2764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:18 IST" name="afterMethod" finished-at="2025-03-19T15:26:20 IST" duration-ms="2115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:20 IST" name="beforeMethod" finished-at="2025-03-19T15:26:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:04 IST" name="beforeMethod" finished-at="2025-03-19T15:55:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="add_emp()[pri:2, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:20 IST" name="add_emp" finished-at="2025-03-19T15:26:29 IST" duration-ms="8736" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:07 IST" name="afterMethod" finished-at="2025-03-19T15:55:09 IST" duration-ms="2099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:09 IST" name="beforeMethod" finished-at="2025-03-19T15:55:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="add_emp()[pri:2, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:09 IST" name="add_emp" finished-at="2025-03-19T15:55:17 IST" duration-ms="8735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_emp -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:29 IST" name="afterMethod" finished-at="2025-03-19T15:26:31 IST" duration-ms="2146" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:17 IST" name="afterMethod" finished-at="2025-03-19T15:55:19 IST" duration-ms="2105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="userCredential()[pri:3, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:31 IST" name="userCredential" finished-at="2025-03-19T15:26:34 IST" duration-ms="2880" status="PASS">
+        <test-method signature="userCredential()[pri:3, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:19 IST" name="userCredential" finished-at="2025-03-19T15:55:27 IST" duration-ms="7654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCredential -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:31 IST" name="beforeMethod" finished-at="2025-03-19T15:26:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:19 IST" name="beforeMethod" finished-at="2025-03-19T15:55:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:34 IST" name="afterMethod" finished-at="2025-03-19T15:26:36 IST" duration-ms="2132" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:27 IST" name="afterMethod" finished-at="2025-03-19T15:55:29 IST" duration-ms="2138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:26:36 IST" name="afterClass" finished-at="2025-03-19T15:26:36 IST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.loginPage@10e31a9a]" started-at="2025-03-19T15:55:29 IST" name="afterClass" finished-at="2025-03-19T15:55:29 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -56,7 +56,7 @@ public class BassClass {
 		Random ra=new Random();
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File old_file = ts.getScreenshotAs(OutputType.FILE);
-		File fis=new File("./Screanshot/"+ra+".png");
+		File fis=new File("./Screanshot/imaige.png");
 		old_file.renameTo(fis);
 		Thread.sleep(2000);
 	}
