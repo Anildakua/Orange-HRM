@@ -63,4 +63,22 @@ public class AdminPOM {
 		}
 		return role;
 	}
+	 
+	@FindBy (xpath = "//div[@class='oxd-select-text-input']")
+	WebElement role_dropdown;
+	
+	public WebElement role_dropdown() {
+		return role_dropdown;
+	}
+	
+	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
+	WebElement save_button;
+	
+	public WebElement save_button() {
+		return save_button;
+	}
+	
+	
+	
+	
 }
