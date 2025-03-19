@@ -1,7 +1,9 @@
 package LoginPage;
 
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -79,7 +81,8 @@ public class loginPage extends BassClass {
 		admin.search_b().click();
 		admin.edit();
 		admin.role_dropdown().click();
-		
+		Thread.sleep(2000);
+
 	}
 //	@Test (priority = 4)
 //	public void logout() throws Exception {
