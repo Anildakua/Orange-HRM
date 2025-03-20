@@ -63,7 +63,12 @@ public class HomepagePOM {
 	
 //	@FindBy(xpath = "//a[text()='Logout']")
 //	WebElement logout;
+	@FindBy(linkText = "Logout")
+	WebElement logout2;
 	
+	public WebElement logout2() {
+		return logout2;	
+	}
 	@FindBy(xpath = "(//a[@class='oxd-userdropdown-link'])[4]")
 	WebElement logout;
 	

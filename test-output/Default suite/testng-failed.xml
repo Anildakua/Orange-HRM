@@ -5,10 +5,10 @@
     <classes>
       <class name="LoginPage.loginPage">
         <methods>
-          <include name="logout"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="Employee"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- LoginPage.loginPage -->

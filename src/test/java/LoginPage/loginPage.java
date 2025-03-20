@@ -105,8 +105,45 @@ public class loginPage extends BassClass {
 		HomepagePOM hm=new HomepagePOM(driver);
 		hm.user_dropdown().click();
 		Thread.sleep(2000);
-		hm.logout().click();
+		hm.logout2().click();
 		Thread.sleep(2000);
 	
+	}
+	@Test(priority = 4)
+	public void Employee() throws Exception {
+		login();
+		
+		pim_POM pim=new pim_POM(driver);
+		Thread.sleep(2000);
+		home.PIM().click();
+		pim.addEmp();
+		Thread.sleep(2000);
+		pim.firstname().sendKeys("Ajay");
+		pim.lastName().sendKeys("Pandita");
+		Thread.sleep(2000);
+		pim.cld().click();
+		Thread.sleep(2000);
+		//pim.new_username();
+		pim.emp_username.sendKeys("ajay123");
+		pim._new_password();
+		pim.con_password();
+		Thread.sleep(2000);
+		pim.save_button().click();
+		
+		Thread.sleep(2000);
+		home.PIM().click();
+		pim.addEmp();
+		Thread.sleep(2000);
+		pim.firstname().sendKeys("Anil");
+		pim.lastName().sendKeys("Dakua");
+		Thread.sleep(2000);
+		pim.cld().click();
+		Thread.sleep(2000);
+		pim.emp_username.sendKeys("anil123");
+		pim._new_password();
+		pim.con_password();
+		Thread.sleep(2000);
+		pim.save_button().click();
+		
 	}
 }

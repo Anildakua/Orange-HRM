@@ -102,4 +102,12 @@ public class pim_POM {
 	 public WebElement save_button() {
 		return save_button;
 		}
+	 
+	 @FindBy (xpath = "(//input[@class='oxd-input oxd-input--active'])[3]")
+	public
+	 WebElement emp_username;
+	 
+	 public WebElement emp_username() {
+		return emp_username;
+		}
 }
