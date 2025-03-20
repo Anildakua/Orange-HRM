@@ -78,6 +78,15 @@ public class AdminPOM {
 		return save_button;
 	}
 	
+	@FindBy (xpath = "//div[@class='oxd-select-option'][2]")
+	WebElement user_role;
+	
+	public WebElement userRole() {
+		return user_role;
+		
+	}
+	
+	
 	
 	
 	

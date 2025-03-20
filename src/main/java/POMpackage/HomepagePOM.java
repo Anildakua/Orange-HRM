@@ -33,11 +33,18 @@ public class HomepagePOM {
 		return modules;
 	}
 	
-	public List<WebElement> PIM() {
-		if(modules.size() >=1) {
-			modules.get(1).click();
-		}
-		return modules;
+//	public List<WebElement> PIM() {
+//		if(modules.size() >=1) {
+//			modules.get(1).click();
+//		}
+//		return modules;
+//	}
+	
+	@FindBy(xpath = "//span[text()='PIM']")
+	WebElement  pim;
+	
+	public WebElement PIM() {
+		return pim;
 	}
 	
 	public List<WebElement> Leave() {
@@ -54,11 +61,22 @@ public class HomepagePOM {
 		return user_dropdown;
 	}
 	
-	@FindBy(xpath = "//a[text()='Logout']")
+//	@FindBy(xpath = "//a[text()='Logout']")
+//	WebElement logout;
+	
+	@FindBy(xpath = "(//a[@class='oxd-userdropdown-link'])[4]")
 	WebElement logout;
 	
 	public WebElement logout() {
 		return logout;
+	}
+	
+	@FindBy (xpath = "//div[@id='oxd-toaster_1']")
+	public WebElement popup;
+	
+	public WebElement popup() {
+		return popup;
+		
 	}
 	
 }

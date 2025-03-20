@@ -18,6 +18,7 @@ import propertiePackage.propartieClass;
 public class loginPage extends BassClass {
 
 	HomepagePOM home;
+	AdminPOM admin;
 	int cell = 0;
 	@Test (priority = 0)
 	public void login() throws Exception {
@@ -44,17 +45,35 @@ public class loginPage extends BassClass {
 	@Test (priority = 1)
 	public void Home() throws Exception {
 		home=new HomepagePOM(driver);
-//		home.Admin();
-//		Thread.sleep(2000);
-//		driver.navigate().back();
-		home.PIM();
+		home.Admin();
 		Thread.sleep(2000);
 		
 	}
 	
 	@Test (priority = 2)
+	public void verifying() throws Exception {
+		admin=new AdminPOM(driver);
+		admin.emp_name().sendKeys(pr.proparties("Admin_EMP"));
+		Thread.sleep(2000);
+		String user_name = admin.emp_dropdown().getText();
+		admin.emp_dropdown().click();
+		Thread.sleep(2000);
+		String name=pr.proparties("Admin_EMP");
+		
+		if (name.equalsIgnoreCase(user_name)) {
+			userCredential();
+			
+		} else {
+			add_emp();
+
+		}
+	}
+	
+	
 	public void add_emp() throws Exception {
 		pim_POM pim=new pim_POM(driver);
+		Thread.sleep(2000);
+		home.PIM().click();
 		pim.addEmp();
 		Thread.sleep(2000);
 		pim.firstname().sendKeys(pr.proparties("Firstname"));
@@ -69,27 +88,25 @@ public class loginPage extends BassClass {
 		pim.save_button().click();
 	}
 	
-	@Test (priority = 3)
+
 	public void userCredential() throws Exception {
-		AdminPOM admin=new AdminPOM(driver);
-		home.Admin();
-		Thread.sleep(2000);
-		admin.emp_name().sendKeys(pr.proparties("Admin_EMP"));
-		Thread.sleep(2000);
-		admin.emp_dropdown().click();
+	    admin=new AdminPOM(driver);
 		Thread.sleep(2000);
 		admin.search_b().click();
 		admin.edit();
 		admin.role_dropdown().click();
 		Thread.sleep(2000);
+		admin.userRole().click();
+		admin.save_button().click();
 
 	}
-//	@Test (priority = 4)
-//	public void logout() throws Exception {
-//		HomepagePOM hm=new HomepagePOM(driver);
-//		hm.user_dropdown().click();
-//		Thread.sleep(2000);
-//		hm.logout().click();
-//	
-//	}
+	@Test (priority = 3)
+	public void logout() throws Exception {
+		HomepagePOM hm=new HomepagePOM(driver);
+		hm.user_dropdown().click();
+		Thread.sleep(2000);
+		hm.logout().click();
+		Thread.sleep(2000);
+	
+	}
 }

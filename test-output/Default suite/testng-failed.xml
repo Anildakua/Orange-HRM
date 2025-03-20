@@ -5,11 +5,9 @@
     <classes>
       <class name="LoginPage.loginPage">
         <methods>
-          <include name="add_emp"/>
-          <include name="Home"/>
+          <include name="logout"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="userCredential"/>
           <include name="afterClass"/>
           <include name="beforeMethod"/>
         </methods>
