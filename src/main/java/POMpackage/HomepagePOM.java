@@ -76,7 +76,7 @@ public class HomepagePOM {
 		return logout;
 	}
 	
-	@FindBy (xpath = "//div[@id='oxd-toaster_1']")
+	@FindBy (xpath = "//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
 	public WebElement popup;
 	
 	public WebElement popup() {

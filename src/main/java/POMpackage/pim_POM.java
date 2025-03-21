@@ -44,7 +44,7 @@ public class pim_POM {
 		return PIM_top;
 	 }
 	 
-	 @FindBy (xpath = "//input[@name='firstName']")
+	 @FindBy (xpath = "//input[@class='oxd-input oxd-input--active orangehrm-firstname']")
 	 WebElement first_name;
 	 
 	 public WebElement firstname() {
@@ -75,11 +75,12 @@ public class pim_POM {
 	 @FindBy (xpath = "//input[@class='oxd-input oxd-input--active']")
 	 List<WebElement> user_credentials;
 	 
-	 public List<WebElement> new_username() {
-		 if(user_credentials.size() >=2) {
-				user_credentials.get(2).sendKeys("Rocky");
-			}
-			return user_credentials;
+	 
+	 @FindBy (xpath = "(//input[@class='oxd-input oxd-input--active'])[3]")
+	 WebElement username;
+	 
+	 public WebElement new_username() {
+			return username;
 		 }
 	 
 	 public List<WebElement> _new_password() {

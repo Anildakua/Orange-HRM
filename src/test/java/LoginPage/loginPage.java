@@ -20,6 +20,9 @@ public class loginPage extends BassClass {
 	HomepagePOM home;
 	AdminPOM admin;
 	int cell = 0;
+	int cell2= 0;
+	int num=0;
+	int user=0;
 	@Test (priority = 0)
 	public void login() throws Exception {
 		
@@ -58,17 +61,27 @@ public class loginPage extends BassClass {
 		String user_name = admin.emp_dropdown().getText();
 		admin.emp_dropdown().click();
 		Thread.sleep(2000);
-		String name=pr.proparties("Admin_EMP");
-		
-		if (name.equalsIgnoreCase(user_name)) {
-			userCredential();
-			
+		String name_user = pr.proparties("Admin_EMP");
+		System.out.println(name_user);
+		System.out.println(user_name);
+		if (user_name.equalsIgnoreCase(name_user)) {
+			System.out.println("if111");
+			String name="No Records Found";
+			admin.search_b().click();
+			Thread.sleep(2000);
+			String popup = home.popup().getText();
+			System.out.println(popup);
+			if (name.equalsIgnoreCase(popup)) {
+				System.out.println("if");
+				add_emp();
+			} else {
+				System.out.println("else");
+				userCredential();
+			}
 		} else {
 			add_emp();
-
 		}
 	}
-	
 	
 	public void add_emp() throws Exception {
 		pim_POM pim=new pim_POM(driver);
@@ -76,23 +89,55 @@ public class loginPage extends BassClass {
 		home.PIM().click();
 		pim.addEmp();
 		Thread.sleep(2000);
-		pim.firstname().sendKeys(pr.proparties("Firstname"));
-		pim.lastName().sendKeys(pr.proparties("Lasrname"));
+		  String First_name = null;
+			String Last_name = null;
+			cell2++;
+			for (int row = 7; row <= 8; row++) {
+					if (row<=7) {
+						System.out.println("7th row");
+						First_name=excelUtil.data("Sheet1", row, cell);
+					} else {
+						System.out.println("10th row");
+						Last_name=excelUtil.data("Sheet1", row, cell);
+					}
+			}
+		pim.firstname().sendKeys(First_name);
 		Thread.sleep(2000);
+		pim.lastName().sendKeys(Last_name);
+		Thread.sleep(2000);
+		String user_name=pim.firstname().getText();
+		System.out.println(user_name);
 		pim.cld().click();
 		Thread.sleep(2000);
-		pim.new_username();
+		
+		 String user_name1 = null;
+			user++;
+			for (int row = 9; row <= 9; row++) {
+					if (row<=9) {
+						System.out.println("9th row");
+						user_name1=excelUtil.data("Sheet1", row, user);
+					} 
+			}
+		
+		pim.new_username().sendKeys(user_name1);
 		pim._new_password();
 		pim.con_password();
 		Thread.sleep(2000);
 		pim.save_button().click();
+		String name=pr.proparties("Firstname");
+		System.out.println(name);
+		num++;
+		if (num<=1) {
+			System.out.println(name);
+			home.Admin();
+			verifying();
+		}
 	}
 	
 
 	public void userCredential() throws Exception {
 	    admin=new AdminPOM(driver);
 		Thread.sleep(2000);
-		admin.search_b().click();
 		admin.edit();
 		admin.role_dropdown().click();
 		Thread.sleep(2000);
@@ -102,6 +147,7 @@ public class loginPage extends BassClass {
 	}
 	@Test (priority = 3)
 	public void logout() throws Exception {
+		Thread.sleep(5000);
 		HomepagePOM hm=new HomepagePOM(driver);
 		hm.user_dropdown().click();
 		Thread.sleep(2000);
@@ -112,38 +158,10 @@ public class loginPage extends BassClass {
 	@Test(priority = 4)
 	public void Employee() throws Exception {
 		login();
-		
-		pim_POM pim=new pim_POM(driver);
-		Thread.sleep(2000);
-		home.PIM().click();
-		pim.addEmp();
-		Thread.sleep(2000);
-		pim.firstname().sendKeys("Ajay");
-		pim.lastName().sendKeys("Pandita");
-		Thread.sleep(2000);
-		pim.cld().click();
-		Thread.sleep(2000);
-		//pim.new_username();
-		pim.emp_username.sendKeys("ajay123");
-		pim._new_password();
-		pim.con_password();
-		Thread.sleep(2000);
-		pim.save_button().click();
-		
-		Thread.sleep(2000);
-		home.PIM().click();
-		pim.addEmp();
-		Thread.sleep(2000);
-		pim.firstname().sendKeys("Anil");
-		pim.lastName().sendKeys("Dakua");
-		Thread.sleep(2000);
-		pim.cld().click();
-		Thread.sleep(2000);
-		pim.emp_username.sendKeys("anil123");
-		pim._new_password();
-		pim.con_password();
-		Thread.sleep(2000);
-		pim.save_button().click();
+		home.PIM();
+		add_emp();
+		add_emp();
 		
 	}
 }
+
