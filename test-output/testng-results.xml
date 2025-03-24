@@ -1,151 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-21T17:06:12 IST" name="Default suite" finished-at="2025-03-21T17:07:30 IST" duration-ms="78121">
+  <suite started-at="2025-03-24T18:30:48 IST" name="Default suite" finished-at="2025-03-24T18:31:36 IST" duration-ms="48108">
     <groups>
     </groups>
-    <test started-at="2025-03-21T17:06:12 IST" name="Default test" finished-at="2025-03-21T17:07:30 IST" duration-ms="78121">
-      <class name="LoginPage.loginPage">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:12 IST" name="beforeClass" finished-at="2025-03-21T17:06:16 IST" duration-ms="3957" status="PASS">
+    <test started-at="2025-03-24T18:30:48 IST" name="Default test" finished-at="2025-03-24T18:31:36 IST" duration-ms="48108">
+      <class name="LoginPage.AdminAcc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:30:48 IST" name="beforeClass" finished-at="2025-03-24T18:30:58 IST" duration-ms="9954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:16 IST" name="beforeMethod" finished-at="2025-03-21T17:06:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:30:58 IST" name="beforeMethod" finished-at="2025-03-24T18:30:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:16 IST" name="login" finished-at="2025-03-21T17:06:18 IST" duration-ms="2671" status="PASS">
+        <test-method signature="login()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:30:58 IST" name="login" finished-at="2025-03-24T18:31:00 IST" duration-ms="2196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:18 IST" name="afterMethod" finished-at="2025-03-21T17:06:21 IST" duration-ms="3069" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:00 IST" name="afterMethod" finished-at="2025-03-24T18:31:03 IST" duration-ms="3179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:21 IST" name="beforeMethod" finished-at="2025-03-21T17:06:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:03 IST" name="beforeMethod" finished-at="2025-03-24T18:31:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Home()[pri:1, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:21 IST" name="Home" finished-at="2025-03-21T17:06:24 IST" duration-ms="2796" status="PASS">
+        <test-method signature="add_emp()[pri:1, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:03 IST" name="add_emp" finished-at="2025-03-24T18:31:09 IST" duration-ms="6036" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Home -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:24 IST" name="afterMethod" finished-at="2025-03-21T17:06:26 IST" duration-ms="2106" status="PASS">
+        </test-method> <!-- add_emp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:09 IST" name="afterMethod" finished-at="2025-03-24T18:31:11 IST" duration-ms="2160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:26 IST" name="beforeMethod" finished-at="2025-03-21T17:06:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:11 IST" name="beforeMethod" finished-at="2025-03-24T18:31:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifying()[pri:2, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:06:26 IST" name="verifying" finished-at="2025-03-21T17:07:04 IST" duration-ms="37914" status="PASS">
+        <test-method signature="userCredential()[pri:2, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:11 IST" name="userCredential" finished-at="2025-03-24T18:31:22 IST" duration-ms="10096" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifying -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:04 IST" name="afterMethod" finished-at="2025-03-21T17:07:06 IST" duration-ms="2147" status="PASS">
+        </test-method> <!-- userCredential -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:22 IST" name="afterMethod" finished-at="2025-03-24T18:31:24 IST" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:06 IST" name="beforeMethod" finished-at="2025-03-21T17:07:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:24 IST" name="beforeMethod" finished-at="2025-03-24T18:31:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="logout()[pri:3, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:06 IST" name="logout" finished-at="2025-03-21T17:07:16 IST" duration-ms="9900" status="PASS">
+        <test-method signature="logout()[pri:3, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:24 IST" name="logout" finished-at="2025-03-24T18:31:34 IST" duration-ms="10001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:16 IST" name="afterMethod" finished-at="2025-03-21T17:07:18 IST" duration-ms="2123" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:34 IST" name="afterMethod" finished-at="2025-03-24T18:31:36 IST" duration-ms="2129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:18 IST" name="beforeMethod" finished-at="2025-03-21T17:07:18 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Employee()[pri:4, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:18 IST" name="Employee" finished-at="2025-03-21T17:07:28 IST" duration-ms="9171" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='PIM']"}
-  (Session info: chrome=134.0.6998.118)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f62f6acb91e82ae2f6bdaa8605a6bea, findElement {using=xpath, value=//span[text()='PIM']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53014/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f62f6acb91e82ae2f6bdaa8605a6bea]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='PIM']"}
-  (Session info: chrome=134.0.6998.118)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f62f6acb91e82ae2f6bdaa8605a6bea, findElement {using=xpath, value=//span[text()='PIM']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53014/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f62f6acb91e82ae2f6bdaa8605a6bea
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at LoginPage.loginPage.add_emp(loginPage.java:89)
-at LoginPage.loginPage.Employee(loginPage.java:162)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Employee -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:28 IST" name="afterMethod" finished-at="2025-03-21T17:07:30 IST" duration-ms="2120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.loginPage@61322f9d]" started-at="2025-03-21T17:07:30 IST" name="afterClass" finished-at="2025-03-21T17:07:30 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.AdminAcc@16293aa2]" started-at="2025-03-24T18:31:36 IST" name="afterClass" finished-at="2025-03-24T18:31:36 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- LoginPage.loginPage -->
+      </class> <!-- LoginPage.AdminAcc -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

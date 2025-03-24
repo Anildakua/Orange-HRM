@@ -55,6 +55,46 @@ public class LeavePOM {
 }
 	
 	
+	@FindBy(xpath = "//span[@class='oxd-topbar-body-nav-tab-item']")
+	WebElement Entitlement;
+	
+	public WebElement Entitlement() {
+		return Entitlement;
+}
+	
+	@FindBy(xpath = "//a[@class='oxd-topbar-body-nav-tab-link']")
+	WebElement AddEntitle;
+	
+	public WebElement AddEntitle() {
+		return AddEntitle;
+}
+	
+	@FindBy(xpath = "//input[@placeholder='Type for hints...']")
+	WebElement Name;
+	
+	public WebElement Name() {
+		return Name;
+}
 	
 	
+	@FindBy(xpath = "//div[@class='oxd-select-text-input']")
+	WebElement LeaveType;
+	
+	public WebElement LeaveType() {
+		return LeaveType;
+}
+	
+	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
+	WebElement LeaveBank;
+	
+	public WebElement LeaveBank() {
+		return LeaveBank;
+}
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement EntSave;
+	
+	public WebElement EntSave() {
+		return EntSave;
+}
 }

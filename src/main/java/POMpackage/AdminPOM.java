@@ -71,6 +71,12 @@ public class AdminPOM {
 		return role_dropdown;
 	}
 	
+	@FindBy (linkText = "Admin")
+	WebElement role_dropdown2;
+	
+	public WebElement role_dropdown2() {
+		return role_dropdown2;
+	}
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
 	WebElement save_button;
 	
