@@ -37,6 +37,13 @@ public class AdminPOM {
 		return search_button;
 	}
 	
+	@FindBy (xpath = "//i[@class='oxd-icon bi-pencil-fill']")
+	WebElement edit_button;
+	
+	public WebElement edit_button() {
+		return edit_button;
+	}
+	
 	@FindBy (xpath = "//button[@class='oxd-icon-button oxd-table-cell-action-space']")
 	List<WebElement> Action_images;
 	
@@ -71,7 +78,7 @@ public class AdminPOM {
 		return role_dropdown;
 	}
 	
-	@FindBy (linkText = "Admin")
+	@FindBy (xpath = "(//div[@role='option'])[2]")
 	WebElement role_dropdown2;
 	
 	public WebElement role_dropdown2() {
