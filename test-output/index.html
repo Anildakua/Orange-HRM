@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1067277915\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1511426047\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,22 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.AdminAcc" class="method navigator-link" hash-for-method="add_emp">add_emp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.EmployeeAcc" class="method navigator-link" hash-for-method="add_emp">add_emp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.AdminAcc" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.EmployeeAcc" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.AdminAcc" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.AdminAcc" class="method navigator-link" hash-for-method="userCredential">userCredential</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="LoginPage.EmployeeAcc" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -137,7 +132,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">LoginPage.AdminAcc</span>
+              <span class="class-name">LoginPage.EmployeeAcc</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -161,19 +156,12 @@
                   <span class="method-name">logout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="userCredential">
-                  </a> <!-- userCredential -->
-                  <span class="method-name">userCredential</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1067277915\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1511426047\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,7 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;LoginPage.AdminAcc&quot;/&gt;
+      &lt;class name=&quot;LoginPage.EmployeeAcc&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -222,28 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userCredential')
-data.setCell(0, 2, 'LoginPage.AdminAcc')
-data.setCell(0, 3, 6396);
+data.setCell(0, 1, 'add_emp')
+data.setCell(0, 2, 'LoginPage.EmployeeAcc')
+data.setCell(0, 3, 3352);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'add_emp')
-data.setCell(1, 2, 'LoginPage.AdminAcc')
-data.setCell(1, 3, 6005);
+data.setCell(1, 1, 'logout')
+data.setCell(1, 2, 'LoginPage.EmployeeAcc')
+data.setCell(1, 3, 1000);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logout')
-data.setCell(2, 2, 'LoginPage.AdminAcc')
-data.setCell(2, 3, 1492);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'LoginPage.AdminAcc')
-data.setCell(3, 3, 888);
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'LoginPage.EmployeeAcc')
+data.setCell(2, 3, 731);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,62 +253,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">LoginPage.AdminAcc</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">LoginPage.EmployeeAcc</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">5594 ms</span>
+                <span class="method-start">4487 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">5595 ms</span>
+                <span class="method-start">4488 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">6486 ms</span>
+                <span class="method-start">5221 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">9958 ms</span>
+                <span class="method-start">8956 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">add_emp</span>
-                <span class="method-start">9959 ms</span>
+                <span class="method-start">8957 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15966 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">18281 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">userCredential</span>
-                <span class="method-start">18282 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">24680 ms</span>
+                <span class="method-start">12310 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">26976 ms</span>
+                <span class="method-start">14497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">26976 ms</span>
+                <span class="method-start">14497 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">28470 ms</span>
+                <span class="method-start">15497 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">30700 ms</span>
+                <span class="method-start">17653 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
