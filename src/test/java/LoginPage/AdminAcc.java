@@ -6,16 +6,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import BasePackage.BassClass;
 import ExcelDataPackage.excelUtil;
+import ListnerPackage.listnerClass;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
 import propertiePackage.propartieClass;
-
+@Listeners(listnerClass.class)
 public class AdminAcc extends BassClass{
 
 	HomepagePOM home;
