@@ -1,10 +1,24 @@
 package POMpackage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LeavePOM {
 	
+	public WebDriver driver;
+	
+	public LeavePOM(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements( driver,this);
+	}
+	@FindBy(linkText = "Leave")
+	WebElement leaveModule;
+	
+	public WebElement leaveModule() {
+		return leaveModule;
+}
 	@FindBy(xpath = "//i[@class='oxd-icon bi-calendar oxd-date-input-icon']")
 	WebElement from;
 	
@@ -84,6 +98,13 @@ public class LeavePOM {
 		return LeaveType;
 }
 	
+	@FindBy(xpath = "(//div[@class='oxd-select-option'])[5]" )
+	WebElement LeaveTypeSelect;
+	
+	public WebElement LeaveTypeSelect() {
+		return LeaveTypeSelect;
+}
+	
 	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
 	WebElement LeaveBank;
 	
@@ -97,4 +118,11 @@ public class LeavePOM {
 	public WebElement EntSave() {
 		return EntSave;
 }
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']")
+	WebElement Confirm;
+	
+	public WebElement Confirm() {
+		return Confirm;
+}
+	//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']
 }

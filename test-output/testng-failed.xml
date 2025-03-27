@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoginPage.AdminAcc">
+      <class name="LoginPage.LeaveBalance">
         <methods>
-          <include name="userCredential"/>
+          <include name="login"/>
           <include name="beforeClass"/>
+          <include name="logout"/>
           <include name="afterMethod"/>
+          <include name="leave"/>
           <include name="afterClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- LoginPage.AdminAcc -->
+      </class> <!-- LoginPage.LeaveBalance -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
