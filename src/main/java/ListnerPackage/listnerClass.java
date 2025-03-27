@@ -1,5 +1,9 @@
 package ListnerPackage;
 
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,7 +14,9 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class listnerClass implements ITestListener {
+import BasePackage.BassClass;
+
+public class listnerClass extends BassClass implements ITestListener {
 
 	public ExtentSparkReporter sparkRepoter;
 	public ExtentReports extend;
@@ -21,7 +27,7 @@ public class listnerClass implements ITestListener {
 		sparkRepoter=new ExtentSparkReporter("./Reports/firstreport.html");
 		sparkRepoter.config().setDocumentTitle("OrangHRM");
 		sparkRepoter.config().setReportName("Create admin");
-		sparkRepoter.config().setTheme(Theme.DARK);
+		sparkRepoter.config().setTheme(Theme.STANDARD);
 		
 		extend=new ExtentReports();
 		extend.attachReporter(sparkRepoter);
@@ -43,6 +49,13 @@ public class listnerClass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		test=extend.createTest(result.getName());
 		test.log(Status.FAIL, "Test case fail :"+result.getName());
+		screenshort();
+//		TakesScreenshot ts=(TakesScreenshot) driver;
+//		System.out.println(ts);
+//		File old_file = ts.getScreenshotAs(OutputType.FILE);
+//		File file=new File("./Screnshoots/imaige.png");
+//		file.renameTo(old_file);
+		
 		//System.out.println("****onTestFailure*****"+result.getName());
 	}
 
