@@ -2,19 +2,34 @@
 <testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-03-27T16:58:08 IST" name="Default suite" finished-at="2025-03-27T16:59:12 IST" duration-ms="63578">
+=======
+  <suite started-at="2025-03-26T18:35:16 IST" name="Default suite" finished-at="2025-03-26T18:35:31 IST" duration-ms="15481">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-03-27T16:58:08 IST" name="Default test" finished-at="2025-03-27T16:59:12 IST" duration-ms="63578">
       <class name="LoginPage.LeaveBalance">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:58:08 IST" name="beforeClass" finished-at="2025-03-27T16:59:01 IST" duration-ms="52704" status="PASS">
+=======
+    <test started-at="2025-03-26T18:35:16 IST" name="Default test" finished-at="2025-03-26T18:35:31 IST" duration-ms="15481">
+      <class name="LoginPage.AdminAcc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:16 IST" name="beforeClass" finished-at="2025-03-26T18:35:20 IST" duration-ms="3728" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:01 IST" name="beforeMethod" finished-at="2025-03-27T16:59:01 IST" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:20 IST" name="beforeMethod" finished-at="2025-03-26T18:35:20 IST" duration-ms="101" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:01 IST" name="login" finished-at="2025-03-27T16:59:12 IST" duration-ms="10822" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -89,9 +104,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method signature="login()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:20 IST" name="login" finished-at="2025-03-26T18:35:20 IST" duration-ms="400" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="afterMethod" finished-at="2025-03-27T16:59:12 IST" duration-ms="4" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -163,13 +182,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:20 IST" name="afterMethod" finished-at="2025-03-26T18:35:20 IST" duration-ms="0" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1743074952157" status="SKIP">
+=======
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:20 IST" name="beforeMethod" finished-at="2025-03-26T18:35:22 IST" duration-ms="1210" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method signature="leave()[pri:1, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="leave" finished-at="2025-03-27T16:59:12 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -241,17 +268,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method signature="add_emp()[pri:1, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:22 IST" name="add_emp" finished-at="2025-03-26T18:35:25 IST" duration-ms="3372" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- leave -->
         <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1743074952163" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
         <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1743074952164" status="SKIP">
+=======
+        </test-method> <!-- add_emp -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:25 IST" name="beforeMethod" finished-at="2025-03-26T18:35:25 IST" duration-ms="139" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method signature="logout()[pri:2, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="logout" finished-at="2025-03-27T16:59:12 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
@@ -323,18 +359,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+=======
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:25 IST" name="afterMethod" finished-at="2025-03-26T18:35:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="userCredential()[pri:2, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:25 IST" name="userCredential" finished-at="2025-03-26T18:35:30 IST" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCredential -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:30 IST" name="afterMethod" finished-at="2025-03-26T18:35:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:30 IST" name="beforeMethod" finished-at="2025-03-26T18:35:30 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="logout()[pri:3, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:30 IST" name="logout" finished-at="2025-03-26T18:35:31 IST" duration-ms="1360" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1743074952168" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.LeaveBalance@3a93b025]" started-at="2025-03-27T16:59:12 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1743074952169" status="SKIP">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:31 IST" name="afterClass" finished-at="2025-03-26T18:35:31 IST" duration-ms="126" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- LoginPage.LeaveBalance -->
+=======
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LoginPage.AdminAcc@d35dea7]" started-at="2025-03-26T18:35:31 IST" name="afterMethod" finished-at="2025-03-26T18:35:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- LoginPage.AdminAcc -->
+>>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
