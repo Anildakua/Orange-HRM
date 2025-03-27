@@ -5,16 +5,19 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import BasePackage.BassClass;
 import ExcelDataPackage.excelUtil;
+import ListnerPackage.listnerClass;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
 import propertiePackage.propartieClass;
 
+@Listeners(listnerClass.class)
 public class loginPage extends BassClass {
 
 	HomepagePOM home;
