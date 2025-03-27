@@ -3,33 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="LoginPage.LeaveBalance">
-=======
-      <class name="LoginPage.loginPage">
->>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
         <methods>
-<<<<<<< HEAD
-          <include name="login"/>
-=======
->>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <include name="beforeClass"/>
-          <include name="logout"/>
           <include name="afterMethod"/>
-<<<<<<< HEAD
           <include name="leave"/>
-=======
-          <include name="verifying"/>
->>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
           <include name="afterClass"/>
-          <include name="Employee"/>
           <include name="beforeMethod"/>
         </methods>
-<<<<<<< HEAD
       </class> <!-- LoginPage.LeaveBalance -->
-=======
-      </class> <!-- LoginPage.loginPage -->
->>>>>>> branch 'master' of https://github.com/Anildakua/Orange-HRM.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,6 +43,8 @@ public void login() throws Exception {
 		leave.Entitlement().click();
 		leave.AddEntitle().click();
 		leave.Name().sendKeys("Anil test");
+		Thread.sleep(3000);
+		leave.NameSuggestion().click();
 		leave.LeaveType().click();
 		Thread.sleep(3000);
 		leave.LeaveTypeSelect().click();

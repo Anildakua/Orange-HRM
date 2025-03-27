@@ -90,7 +90,15 @@ public class LeavePOM {
 		return Name;
 }
 	
+	@FindBy(xpath = "//div[@class='oxd-autocomplete-option']")
+	WebElement NameSuggestion;
 	
+	public WebElement NameSuggestion() {
+		return NameSuggestion;
+}
+	
+	
+	//div[@class='oxd-autocomplete-option']
 	@FindBy(xpath = "//div[@class='oxd-select-text-input']")
 	WebElement LeaveType;
 	

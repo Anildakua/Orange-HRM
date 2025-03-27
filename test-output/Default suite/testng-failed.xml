@@ -5,9 +5,7 @@
     <classes>
       <class name="LoginPage.LeaveBalance">
         <methods>
-          <include name="login"/>
           <include name="beforeClass"/>
-          <include name="logout"/>
           <include name="afterMethod"/>
           <include name="leave"/>
           <include name="afterClass"/>
