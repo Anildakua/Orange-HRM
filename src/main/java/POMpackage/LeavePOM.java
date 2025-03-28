@@ -132,4 +132,18 @@ public class LeavePOM {
 	public WebElement Confirm() {
 		return Confirm;
 }
+	
+	@FindBy(xpath = "//input[@placeholder='Type for hints...']")
+	WebElement EmpLeave;
+	
+	public WebElement EmpLeave() {
+		return EmpLeave;
+}
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement EmpSearch;
+	
+	public WebElement EmpSearch() {
+		return EmpSearch;
+}
 }

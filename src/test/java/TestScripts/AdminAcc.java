@@ -59,7 +59,6 @@ public void login() throws Exception {
 		String user_name=pim.firstname().getText();
 		System.out.println(user_name);
 		pim.cld().click();
-		
 		pim.new_username().sendKeys(excelUtil.data("Sheet1", 1, 2));
 		pim._new_password();
 		pim.con_password();
