@@ -27,7 +27,7 @@ import propertiePackage.propartieClass;
 
 public class BassClass {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public propartieClass pr=new propartieClass();
 	
 	@BeforeClass
@@ -44,7 +44,6 @@ public class BassClass {
 		
 //		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 //		WebElement until = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username']")));
-		screenshort();
 	}
 	
 	
@@ -58,15 +57,6 @@ public class BassClass {
 	public void afterClass() {
 		
 		driver.quit();
-	}
-	
-	public void screenshort() {
-		Random ra=new Random();
-		TakesScreenshot ts=(TakesScreenshot)driver;
-		System.out.println(ts);
-		File old_file = ts.getScreenshotAs(OutputType.FILE);
-		File fis=new File("./Screnshoots/imaige.png");
-		old_file.renameTo(fis);
 	}
 
 

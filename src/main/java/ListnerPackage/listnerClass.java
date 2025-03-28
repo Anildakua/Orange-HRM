@@ -49,14 +49,14 @@ public class listnerClass extends BassClass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		test=extend.createTest(result.getName());
 		test.log(Status.FAIL, "Test case fail :"+result.getName());
-		screenshort();
-//		TakesScreenshot ts=(TakesScreenshot) driver;
-//		System.out.println(ts);
-//		File old_file = ts.getScreenshotAs(OutputType.FILE);
-//		File file=new File("./Screnshoots/imaige.png");
-//		file.renameTo(old_file);
 		
-		//System.out.println("****onTestFailure*****"+result.getName());
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		System.out.println(ts);
+		File old_file = ts.getScreenshotAs(OutputType.FILE);
+		File file=new File("./Screnshoots/imaige.png");
+		old_file.renameTo(file);
+		
+		System.out.println("****onTestFailure*****"+result.getName());
 	}
 
 	@Override

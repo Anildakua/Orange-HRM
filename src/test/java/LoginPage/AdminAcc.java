@@ -1,5 +1,6 @@
 package LoginPage;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -63,7 +64,11 @@ public void login() throws Exception {
 		pim._new_password();
 		pim.con_password();
 		wait.until(ExpectedConditions.elementToBeClickable(pim.save_button()));
+		System.out.println("its working");
+		Thread.sleep(5000);
 		pim.save_button().click();
+		Thread.sleep(5000);
+		System.out.println("its byyy not working");
 		}else {
 			System.out.println("I am not Homepage");
 		}
