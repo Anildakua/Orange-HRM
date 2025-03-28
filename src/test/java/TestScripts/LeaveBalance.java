@@ -1,4 +1,4 @@
-package LoginPage;
+package TestScripts;
 
 import java.time.Duration;
 
@@ -7,14 +7,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import BasePackage.BassClass;
-import ExcelDataPackage.excelUtil;
-import ListnerPackage.listnerClass;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.LeavePOM;
 import POMpackage.loginPOM;
-import propertiePackage.propartieClass;
+import UtilityPackage.BassClass;
+import UtilityPackage.excelUtil;
+import UtilityPackage.listnerClass;
+import UtilityPackage.propartieClass;
 
 @Listeners(listnerClass.class)
 public class LeaveBalance extends BassClass {

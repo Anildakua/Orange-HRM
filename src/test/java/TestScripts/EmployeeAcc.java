@@ -1,4 +1,4 @@
-package LoginPage;
+package TestScripts;
 
 import org.testng.annotations.Test;
 import java.time.Duration;
@@ -7,13 +7,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import BasePackage.BassClass;
-import ExcelDataPackage.excelUtil;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
-import propertiePackage.propartieClass;
+import UtilityPackage.BassClass;
+import UtilityPackage.excelUtil;
+import UtilityPackage.propartieClass;
 
 public class EmployeeAcc extends BassClass {
 	HomepagePOM home;

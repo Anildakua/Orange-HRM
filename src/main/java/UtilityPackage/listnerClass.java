@@ -1,4 +1,4 @@
-package ListnerPackage;
+package UtilityPackage;
 
 import java.io.File;
 
@@ -13,8 +13,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import BasePackage.BassClass;
 
 public class listnerClass extends BassClass implements ITestListener {
 
@@ -51,12 +49,11 @@ public class listnerClass extends BassClass implements ITestListener {
 		test.log(Status.FAIL, "Test case fail :"+result.getName());
 		
 		TakesScreenshot ts=(TakesScreenshot) driver;
-		System.out.println(ts);
 		File old_file = ts.getScreenshotAs(OutputType.FILE);
-		File file=new File("./Screnshoots/imaige.png");
+		File file=new File("./Screenshots/imaige.png");
 		old_file.renameTo(file);
 		
-		System.out.println("****onTestFailure*****"+result.getName());
+		//System.out.println("****onTestFailure*****"+result.getName());
 	}
 
 	@Override

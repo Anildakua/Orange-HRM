@@ -99,6 +99,14 @@ public class AdminPOM {
 		
 	}
 	
+	@FindBy (xpath = "//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
+	WebElement pop_up;
+	
+	public WebElement adminPopUP() {
+		return pop_up;
+		
+	}
+	
 	
 	
 	

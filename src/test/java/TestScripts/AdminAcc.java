@@ -1,4 +1,4 @@
-package LoginPage;
+package TestScripts;
 
 import org.testng.annotations.Test;
 import java.time.Duration;
@@ -10,14 +10,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import BasePackage.BassClass;
-import ExcelDataPackage.excelUtil;
-import ListnerPackage.listnerClass;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
-import propertiePackage.propartieClass;
+import UtilityPackage.BassClass;
+import UtilityPackage.excelUtil;
+import UtilityPackage.listnerClass;
+import UtilityPackage.propartieClass;
 @Listeners(listnerClass.class)
 public class AdminAcc extends BassClass{
 
@@ -64,11 +64,9 @@ public void login() throws Exception {
 		pim._new_password();
 		pim.con_password();
 		wait.until(ExpectedConditions.elementToBeClickable(pim.save_button()));
-		System.out.println("its working");
 		Thread.sleep(5000);
 		pim.save_button().click();
 		Thread.sleep(5000);
-		System.out.println("its byyy not working");
 		}else {
 			System.out.println("I am not Homepage");
 		}
@@ -94,6 +92,7 @@ public void login() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(admin.role_dropdown2()));
 		admin.role_dropdown2().click();
 		admin.save_button().click();
+		wait.until(ExpectedConditions.visibilityOf(admin.adminPopUP()));
 		}else {
 			System.out.println("I am not Admin Page");
 		}

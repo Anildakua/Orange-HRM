@@ -1,4 +1,4 @@
-package LoginPage;
+package TestScripts;
 
 
 import org.openqa.selenium.Keys;
@@ -8,14 +8,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import BasePackage.BassClass;
-import ExcelDataPackage.excelUtil;
-import ListnerPackage.listnerClass;
 import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
-import propertiePackage.propartieClass;
+import UtilityPackage.BassClass;
+import UtilityPackage.excelUtil;
+import UtilityPackage.listnerClass;
+import UtilityPackage.propartieClass;
 
 @Listeners(listnerClass.class)
 public class loginPage extends BassClass {
