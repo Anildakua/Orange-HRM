@@ -31,7 +31,7 @@ public class ApplyLeave extends BaseClass {
 		String name=excelUtil.data("Sheet1", 9, 2);
 		String pass=excelUtil.data("Sheet1", 2, 2);	
 		loginPOM pom=new loginPOM(driver);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(pom.username()));
 		pom.username().sendKeys(name);
 		pom.password().sendKeys(pass);
@@ -61,13 +61,14 @@ public class ApplyLeave extends BaseClass {
 		Thread.sleep(2000);
 		apply.T_date().click();
 		System.out.println("04");
-		apply.Full_day().click();
-		System.out.println("05");
-		apply.Duration().click();
+//		apply.Full_day().click();
+//		System.out.println("05");
+//		apply.Duration().click();
 		
 		
 		apply.Comments().sendKeys("i need leave for 2 days");
 		apply.apply_button().click();
+		wait.until(ExpectedConditions.visibilityOf(apply.popup_apply()));
 			
 	}
 	

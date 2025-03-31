@@ -80,4 +80,10 @@ public class Apply {
 	public WebElement apply_button() {
 		return  apply_button;
 }
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
+	WebElement popup_apply;
+	
+	public WebElement popup_apply() {
+		return  popup_apply;
+}
 }
