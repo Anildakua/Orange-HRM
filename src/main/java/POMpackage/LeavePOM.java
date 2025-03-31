@@ -158,4 +158,18 @@ public class LeavePOM {
 	public WebElement Leave_Type_leave() {
 		return Leavetype_leve;
 }
+	
+	@FindBy(xpath = "//div[@class='oxd-autocomplete-option']")
+	WebElement Suggestion;
+	
+	public WebElement Suggestion() {
+		return Suggestion;
+}
+	
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-success oxd-table-cell-action-space']")
+	WebElement Approve;
+	
+	public WebElement Approve() {
+		return Approve;
+}
 }

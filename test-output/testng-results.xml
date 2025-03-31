@@ -1,201 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-31T16:17:25 IST" name="Suite" finished-at="2025-03-31T16:18:33 IST" duration-ms="68215">
+  <suite started-at="2025-03-31T17:08:24 IST" name="Default suite" finished-at="2025-03-31T17:08:40 IST" duration-ms="16028">
     <groups>
     </groups>
-    <test started-at="2025-03-31T16:17:25 IST" name="Test" finished-at="2025-03-31T16:18:33 IST" duration-ms="68215">
-      <class name="TestScripts.LeaveBalance">
-        <test-method signature="login()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="login" finished-at="2025-03-31T16:18:04 IST" duration-ms="490" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="beforeMethod" finished-at="2025-03-31T16:18:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="beforeClass" finished-at="2025-03-31T16:18:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="afterMethod" finished-at="2025-03-31T16:18:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="leave()[pri:1, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="leave" finished-at="2025-03-31T16:18:15 IST" duration-ms="10590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- leave -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:04 IST" name="beforeMethod" finished-at="2025-03-31T16:18:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:15 IST" name="afterMethod" finished-at="2025-03-31T16:18:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.LeaveBalance@7c9d8e2]" started-at="2025-03-31T16:18:15 IST" name="afterClass" finished-at="2025-03-31T16:18:16 IST" duration-ms="931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestScripts.LeaveBalance -->
+    <test started-at="2025-03-31T17:08:24 IST" name="Default test" finished-at="2025-03-31T17:08:40 IST" duration-ms="16028">
       <class name="TestScripts.SanctionLeave">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="beforeClass" finished-at="2025-03-31T16:18:28 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="login" finished-at="2025-03-31T16:18:28 IST" duration-ms="434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="beforeMethod" finished-at="2025-03-31T16:18:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="leave()[pri:1, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="leave" finished-at="2025-03-31T16:18:31 IST" duration-ms="2745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- leave -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="afterMethod" finished-at="2025-03-31T16:18:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:28 IST" name="beforeMethod" finished-at="2025-03-31T16:18:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:31 IST" name="afterClass" finished-at="2025-03-31T16:18:33 IST" duration-ms="1795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@6200f9cb]" started-at="2025-03-31T16:18:31 IST" name="afterMethod" finished-at="2025-03-31T16:18:31 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- TestScripts.SanctionLeave -->
-      <class name="TestScripts.ApplyLeave">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="beforeMethod" finished-at="2025-03-31T16:18:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="beforeClass" finished-at="2025-03-31T16:18:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="login" finished-at="2025-03-31T16:18:16 IST" duration-ms="451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="afterMethod" finished-at="2025-03-31T16:18:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="apply()[pri:1, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="apply" finished-at="2025-03-31T16:18:27 IST" duration-ms="10837" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- apply -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:16 IST" name="beforeMethod" finished-at="2025-03-31T16:18:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:27 IST" name="afterClass" finished-at="2025-03-31T16:18:28 IST" duration-ms="888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@20d525]" started-at="2025-03-31T16:18:27 IST" name="afterMethod" finished-at="2025-03-31T16:18:27 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- TestScripts.ApplyLeave -->
-      <class name="TestScripts.EmployeeAcc">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:52 IST" name="beforeClass" finished-at="2025-03-31T16:17:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:52 IST" name="login" finished-at="2025-03-31T16:17:53 IST" duration-ms="479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:52 IST" name="beforeMethod" finished-at="2025-03-31T16:17:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:53 IST" name="afterMethod" finished-at="2025-03-31T16:17:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="add_emp()[pri:1, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:53 IST" name="add_emp" finished-at="2025-03-31T16:18:03 IST" duration-ms="9834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_emp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:17:53 IST" name="beforeMethod" finished-at="2025-03-31T16:17:53 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:18:03 IST" name="afterMethod" finished-at="2025-03-31T16:18:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.EmployeeAcc@37ceb1df]" started-at="2025-03-31T16:18:03 IST" name="afterClass" finished-at="2025-03-31T16:18:04 IST" duration-ms="932" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestScripts.EmployeeAcc -->
-      <class name="TestScripts.AdminAcc">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:25 IST" name="beforeTest" finished-at="2025-03-31T16:17:29 IST" duration-ms="4015" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:24 IST" name="beforeTest" finished-at="2025-03-31T17:08:28 IST" duration-ms="4429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:29 IST" name="beforeClass" finished-at="2025-03-31T16:17:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:28 IST" name="beforeClass" finished-at="2025-03-31T17:08:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:29 IST" name="login" finished-at="2025-03-31T16:17:30 IST" duration-ms="540" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:28 IST" name="login" finished-at="2025-03-31T17:08:29 IST" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:29 IST" name="beforeMethod" finished-at="2025-03-31T16:17:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:28 IST" name="beforeMethod" finished-at="2025-03-31T17:08:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:30 IST" name="afterMethod" finished-at="2025-03-31T16:17:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:29 IST" name="afterMethod" finished-at="2025-03-31T17:08:29 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="add_emp()[pri:1, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:30 IST" name="add_emp" finished-at="2025-03-31T16:17:45 IST" duration-ms="15329" status="PASS">
+        <test-method signature="leave()[pri:1, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:29 IST" name="leave" finished-at="2025-03-31T17:08:38 IST" duration-ms="8991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_emp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:30 IST" name="beforeMethod" finished-at="2025-03-31T16:17:30 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- leave -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:29 IST" name="beforeMethod" finished-at="2025-03-31T17:08:29 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:45 IST" name="afterMethod" finished-at="2025-03-31T16:17:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:38 IST" name="afterMethod" finished-at="2025-03-31T17:08:38 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="userCredential()[pri:2, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:45 IST" name="userCredential" finished-at="2025-03-31T16:17:51 IST" duration-ms="6594" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCredential -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:45 IST" name="beforeMethod" finished-at="2025-03-31T16:17:45 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:51 IST" name="afterMethod" finished-at="2025-03-31T16:17:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:17:51 IST" name="afterClass" finished-at="2025-03-31T16:17:52 IST" duration-ms="978" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:38 IST" name="afterClass" finished-at="2025-03-31T17:08:40 IST" duration-ms="1733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestScripts.AdminAcc@131ef10]" started-at="2025-03-31T16:18:33 IST" name="afterTest" finished-at="2025-03-31T16:18:33 IST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestScripts.SanctionLeave@1189dd52]" started-at="2025-03-31T17:08:40 IST" name="afterTest" finished-at="2025-03-31T17:08:40 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- TestScripts.AdminAcc -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- TestScripts.SanctionLeave -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

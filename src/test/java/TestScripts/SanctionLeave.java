@@ -41,7 +41,12 @@ public void login() throws Exception {
 		leave = new LeavePOM(driver);
 		home.Leave();
 		leave.EmpName().sendKeys("Anil Test");
+		Thread.sleep(2000);
+		leave.Suggestion().click();
+		Thread.sleep(2000);
 		leave.EmpSearch().click();
+		Thread.sleep(2000);
+		leave.Approve().click();
 		
 		
 }
