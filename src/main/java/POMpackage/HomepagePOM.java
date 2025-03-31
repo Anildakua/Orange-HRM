@@ -47,11 +47,12 @@ public class HomepagePOM {
 		return pim;
 	}
 	
-	public List<WebElement> Leave() {
-		if(modules.size() >=1) {
-			modules.get(2).click();
-		}
-		return modules;
+	@FindBy(xpath = "//span[text()='Leave']")
+	WebElement  leave;
+	
+	public WebElement Leave() {
+	     leave.click();
+		return leave;
 	}
 	
 	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']/../..")

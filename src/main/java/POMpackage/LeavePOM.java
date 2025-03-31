@@ -146,4 +146,16 @@ public class LeavePOM {
 	public WebElement EmpSearch() {
 		return EmpSearch;
 }
+//	@FindBy(xpath = "//a[text()='Apply']")
+//	WebElement Apply;
+//	
+//	public WebElement Apply() {
+//		return Apply;
+//}
+	@FindBy(xpath = "//div[@class='oxd-select-text oxd-select-text--active']")
+	WebElement Leavetype_leve;
+	
+	public WebElement Leave_Type_leave() {
+		return Leavetype_leve;
+}
 }

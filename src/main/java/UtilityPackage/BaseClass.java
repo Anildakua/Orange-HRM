@@ -18,8 +18,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import POMpackage.HomepagePOM;
@@ -29,12 +31,21 @@ public class BaseClass {
 	public static WebDriver driver;
 	public propartieClass pr=new propartieClass();
 	
+	@BeforeTest
+	public void beforeTest() {
+		driver=new ChromeDriver();     //open the chrome browser 
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		try {
+			driver.get(pr.proparties("URL"));
+		} catch (Exception e) {
+			System.out.println("Not get the URL proparties file we get the :"+e);
+		}
+	}
+	
 	@BeforeClass
 	public void beforeClass() throws Exception {
-	        driver=new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-			driver.get(pr.proparties("URL"));
+	        
 	}
 	
 	@BeforeMethod
@@ -54,7 +65,17 @@ public class BaseClass {
 	}
 	@AfterClass
 	public void afterClass() {
+		HomepagePOM hm=new HomepagePOM(driver);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(hm.user_dropdown()));
+		hm.user_dropdown().click();
+		wait.until(ExpectedConditions.elementToBeClickable(hm.logout2()));
+		hm.logout2().click();	
 		
+	}
+	
+	@AfterTest
+	public void afterTest() {
 		driver.quit();
 	}
 

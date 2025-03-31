@@ -1,5 +1,6 @@
 package TestScripts;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,13 +12,13 @@ import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.LeavePOM;
 import POMpackage.loginPOM;
-import UtilityPackage.BassClass;
+import UtilityPackage.BaseClass;
 import UtilityPackage.excelUtil;
 import UtilityPackage.listnerClass;
 import UtilityPackage.propartieClass;
 
 @Listeners(listnerClass.class)
-public class LeaveBalance extends BassClass {
+public class LeaveBalance extends BaseClass {
 	
 	HomepagePOM home;
 	AdminPOM admin;
@@ -56,14 +57,5 @@ public void login() throws Exception {
 		leave.Confirm().click();
 		
 		}
-	
-	@Test(priority = 2)
-	public void logout() throws Exception {
-		HomepagePOM hm=new HomepagePOM(driver);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(hm.user_dropdown()));
-		hm.user_dropdown().click();
-		wait.until(ExpectedConditions.elementToBeClickable(hm.logout2()));
-		hm.logout2().click();	
-	}
+
 }

@@ -14,6 +14,12 @@ public class Apply {
 		PageFactory.initElements( driver,this);
 	}
 	
+	@FindBy (xpath = "//li[@class='oxd-topbar-body-nav-tab']")
+	WebElement Apply;
+	
+	public WebElement Apply2() {
+		return Apply;
+}	
 	@FindBy(xpath = "//div[@class='oxd-select-text oxd-select-text--active']")
 	WebElement leaveType;
 	
@@ -28,13 +34,21 @@ public class Apply {
 		return CAN_personal;
 }	
 	
-	@FindBy(xpath = "//input[@class='oxd-input oxd-input--focus']")
+	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
 	WebElement From_date;
 	
 	public WebElement From_date() {
 		return From_date;
 }	
-	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
+	
+	@FindBy(xpath = "//div[text()='22']")
+	WebElement T_date;
+	
+	public WebElement T_date() {
+		return T_date;
+}
+	
+	@FindBy(xpath = "(//input[@placeholder='yyyy-dd-mm'])[2]")
 	WebElement To_date;
 	
 	public WebElement To_date() {

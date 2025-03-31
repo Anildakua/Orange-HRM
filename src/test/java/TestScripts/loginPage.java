@@ -12,13 +12,13 @@ import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
-import UtilityPackage.BassClass;
+import UtilityPackage.BaseClass;
 import UtilityPackage.excelUtil;
 import UtilityPackage.listnerClass;
 import UtilityPackage.propartieClass;
 
 @Listeners(listnerClass.class)
-public class loginPage extends BassClass {
+public class loginPage extends BaseClass {
 
 	HomepagePOM home;
 	AdminPOM admin;

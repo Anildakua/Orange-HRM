@@ -1,5 +1,6 @@
 package TestScripts;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,14 +23,13 @@ public class ApplyLeave extends BaseClass {
 	LeavePOM leave;
 	WebDriverWait wait;
 	Apply apply;
+	
 	@Test(priority = 0)
-public void login() throws Exception {
+    public void login() throws Exception {
 		
-		
-		propartieClass pro = new propartieClass();
-		String name=excelUtil.data("Sheet1", 7, 2);
-		String pass=excelUtil.data("Sheet1", 3, 2);	
-		
+
+		String name=excelUtil.data("Sheet1", 9, 2);
+		String pass=excelUtil.data("Sheet1", 2, 2);	
 		loginPOM pom=new loginPOM(driver);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(pom.username()));
@@ -39,28 +39,36 @@ public void login() throws Exception {
  }
 	
 	@Test(priority = 1)
-	public void apply() {
+	public void apply() throws Exception {
 		home=new HomepagePOM(driver);
+		apply=new Apply(driver);
+		
 		home.Leave();
-		leave.Apply().click();
+	
+		apply.Apply2().click();
+		Thread.sleep(2000);
+		
 		apply.leaveType().click();
+	
 		apply.CAN_personal().click();
+		System.out.println("01");
 		apply.From_date().sendKeys("2025-20-03");
-		apply.To_date().sendKeys("2025-22-03");
-		apply.Duration().click();
+		System.out.println("02");
+		Thread.sleep(2000);
+		System.out.println("03");
+		apply.To_date().click();
+//		apply.To_date().clear();
+		Thread.sleep(2000);
+		apply.T_date().click();
+		System.out.println("04");
 		apply.Full_day().click();
+		System.out.println("05");
+		apply.Duration().click();
+		
+		
 		apply.Comments().sendKeys("i need leave for 2 days");
 		apply.apply_button().click();
 			
 	}
 	
-	@Test(priority = 2)
-	public void logout() throws Exception {
-		HomepagePOM hm=new HomepagePOM(driver);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(hm.user_dropdown()));
-		hm.user_dropdown().click();
-		wait.until(ExpectedConditions.elementToBeClickable(hm.logout2()));
-		hm.logout2().click();	
-	}
 }

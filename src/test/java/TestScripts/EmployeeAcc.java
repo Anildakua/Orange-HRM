@@ -1,6 +1,7 @@
 package TestScripts;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,18 +12,16 @@ import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.loginPOM;
 import POMpackage.pim_POM;
-import UtilityPackage.BassClass;
+import UtilityPackage.BaseClass;
 import UtilityPackage.excelUtil;
 import UtilityPackage.propartieClass;
 
-public class EmployeeAcc extends BassClass {
+public class EmployeeAcc extends BaseClass {
 	HomepagePOM home;
 	AdminPOM admin;
 	@Test(priority = 0)
 public void login() throws Exception {
 		
-		
-		propartieClass pro = new propartieClass();
 		String name=excelUtil.data("Sheet1", 1, 2);
 		String pass=excelUtil.data("Sheet1", 2, 2);	
 		
@@ -64,13 +63,4 @@ public void login() throws Exception {
 			System.out.println("I am not Homepage");
 		}
 }
-	@Test(priority = 2)
-	public void logout() throws Exception {
-		HomepagePOM hm=new HomepagePOM(driver);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(hm.user_dropdown()));
-		hm.user_dropdown().click();
-		wait.until(ExpectedConditions.elementToBeClickable(hm.logout2()));
-		hm.logout2().click();	
-	}
 }

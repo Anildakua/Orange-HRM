@@ -1,5 +1,6 @@
 package TestScripts;
 
+import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,11 +11,11 @@ import POMpackage.AdminPOM;
 import POMpackage.HomepagePOM;
 import POMpackage.LeavePOM;
 import POMpackage.loginPOM;
-import UtilityPackage.BassClass;
+import UtilityPackage.BaseClass;
 import UtilityPackage.excelUtil;
 import UtilityPackage.propartieClass;
 
-public class SanctionLeave extends BassClass{
+public class SanctionLeave extends BaseClass{
 
 	HomepagePOM home;
 	AdminPOM admin;
