@@ -17,17 +17,6 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- TestScripts.SanctionLeave -->
-      <class name="TestScripts.ApplyLeave">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="apply"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- TestScripts.ApplyLeave -->
       <class name="TestScripts.VerifyLeave">
         <methods>
           <include name="beforeTest"/>

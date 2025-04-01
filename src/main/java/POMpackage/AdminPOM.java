@@ -23,6 +23,13 @@ public class AdminPOM {
 		return emp_name_dropdown;
 	}
 	
+	@FindBy (xpath = "//div[@class='oxd-autocomplete-option']")
+	WebElement emp_name_dropdown_text;
+	
+	public WebElement emp_dropdown_text() {
+		return emp_name_dropdown_text;
+	}
+	
 	@FindBy (xpath = "//input[@placeholder='Type for hints...']")
 	WebElement Emp_name;
 	

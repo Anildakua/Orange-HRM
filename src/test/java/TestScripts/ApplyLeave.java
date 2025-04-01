@@ -42,30 +42,19 @@ public class ApplyLeave extends BaseClass {
 	public void apply() throws Exception {
 		home=new HomepagePOM(driver);
 		apply=new Apply(driver);
-		
 		home.Leave();
-	
 		apply.Apply2().click();
-		Thread.sleep(2000);
-		
+		wait.until(ExpectedConditions.visibilityOf(apply.leaveType()));
 		apply.leaveType().click();
-	
 		apply.CAN_personal().click();
-		System.out.println("01");
 		apply.From_date().sendKeys("2025-20-03");
-		System.out.println("02");
-		Thread.sleep(2000);
-		System.out.println("03");
+		wait.until(ExpectedConditions.visibilityOf(apply.To_date()));
 		apply.To_date().click();
-//		apply.To_date().clear();
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(apply.T_date()));
 		apply.T_date().click();
-		System.out.println("04");
 //		apply.Full_day().click();
-//		System.out.println("05");
 //		apply.Duration().click();
-		
-		
+
 		apply.Comments().sendKeys("i need leave for 2 days");
 		apply.apply_button().click();
 		wait.until(ExpectedConditions.visibilityOf(apply.popup_apply()));

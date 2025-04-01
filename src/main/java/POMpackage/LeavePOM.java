@@ -187,4 +187,12 @@ public class LeavePOM {
 	public WebElement my_leve_cancel_Button() {
 		return my_leve_cancel_Button;
 }
+	
+	@FindBy(xpath = "(//div[@class='oxd-table-cell oxd-padding-cell'])[7]")
+	WebElement my_leve_status;
+	
+	public WebElement my_leve_status() {
+		return my_leve_status;
+}
+	
 }

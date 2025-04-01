@@ -76,8 +76,6 @@ public void login() throws Exception {
 		String expected_result2 = "OrangeHRM";
 		String actual_result2 =driver.getTitle();
 		if(expected_result2.equals(actual_result2)) {
-			System.out.println("I am Admin Page");
-		
 	    admin=new AdminPOM(driver);
 	    home.Admin();	
 	    admin.emp_name().sendKeys(pr.proparties("Admin_EMP"));

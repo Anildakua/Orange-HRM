@@ -41,26 +41,25 @@ public class VerifyLeave extends BaseClass {
 		leave=new LeavePOM(driver);
 		home.Leave();
 		WebElement record_no_1 =leave.my_leve_first_record();
-		WebElement cancel=leave.my_leve_cancel_Button();
-		boolean button = cancel.isDisplayed();
+		//WebElement cancel=leave.my_leve_cancel_Button();
+		String status = leave.my_leve_status().getText();   
+		String text="Taken";
 		if (record_no_1.isDisplayed()==true)
 		{
-			System.out.println("displayed");
 			Assert.assertTrue(true);
-			if (button==true)
+			if (status.contains(text))
 			{
-				Assert.fail("leave not approve");
-				System.out.println("button is displayed");
+				Assert.assertTrue(true,"leave aprove");
+				System.out.println("Leave is approved");
 			}
 			else
 			{
-				Assert.assertTrue(true,"leave aprove");
-				System.out.println("button is not displayed");
+				Assert.fail("leave not approve");
 			}
 		}
 		else 
 		{
-			//Assert.fail("leave not displayed");
+			Assert.fail("leave not displayed");
 			System.out.println("leave not displayed");
 		}
 	}
