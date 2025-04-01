@@ -172,4 +172,19 @@ public class LeavePOM {
 	public WebElement Approve() {
 		return Approve;
 }
+	
+	
+	@FindBy(xpath = "(//div[@class='oxd-table-row oxd-table-row--with-border'])[2]")
+	WebElement my_leve_first_record;
+	
+	public WebElement my_leve_first_record() {
+		return my_leve_first_record;
+}
+	
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-warn oxd-table-cell-action-space']")
+	WebElement my_leve_cancel_Button;
+	
+	public WebElement my_leve_cancel_Button() {
+		return my_leve_cancel_Button;
+}
 }

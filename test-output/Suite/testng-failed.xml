@@ -6,17 +6,39 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="TestScripts.SanctionLeave">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="leave"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestScripts.SanctionLeave -->
       <class name="TestScripts.ApplyLeave">
         <methods>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
-          <include name="afterTest"/>
           <include name="apply"/>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- TestScripts.ApplyLeave -->
+      <class name="TestScripts.VerifyLeave">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="verify"/>
+        </methods>
+      </class> <!-- TestScripts.VerifyLeave -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

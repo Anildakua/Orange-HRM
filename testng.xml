@@ -11,6 +11,7 @@
       <class name="TestScripts.LeaveBalance"/>
       <class name="TestScripts.ApplyLeave"/>
       <class name="TestScripts.SanctionLeave"/>
+      <class name="TestScripts.VerifyLeave"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -39,7 +39,6 @@ public void login() throws Exception {
 		String expected_result = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 		String actual_result =driver.getCurrentUrl();
 		if(expected_result.equals(actual_result)) {
-			System.out.println("I am homepage");
 		
 		pim_POM pim=new pim_POM(driver);
 		home  = new HomepagePOM(driver);
