@@ -51,17 +51,13 @@ public class BaseClass {
 	@BeforeMethod
 	public void beforeMethod() {
 	 
-		
-//		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-//		WebElement until = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username']")));
 	}
 	
 	
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
 		
-//		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='oxd-userdropdown-tab']")));
+
 	}
 	@AfterClass
 	public void afterClass() {

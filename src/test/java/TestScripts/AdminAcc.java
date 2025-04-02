@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -40,6 +41,7 @@ public void login() throws Exception {
 		pom.password().sendKeys(pass);
 		pom.button().click();
 }
+	
 	@Test(priority = 1)
 	public void add_emp() throws Exception {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

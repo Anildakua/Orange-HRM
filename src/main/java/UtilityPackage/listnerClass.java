@@ -1,15 +1,19 @@
 package UtilityPackage;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -48,13 +52,24 @@ public class listnerClass extends BaseClass implements ITestListener {
 		test=extend.createTest(result.getName());
 		test.log(Status.FAIL, "Test case fail :"+result.getName());
 		
+		String path="./Screenshots/"+result.getName()+".JPG";
+		
+		System.out.println("fail script");
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File old_file = ts.getScreenshotAs(OutputType.FILE);
-		File file=new File("./Screenshots/imaige.png");
-		old_file.renameTo(file);
-		
+		File file=new File(path);
+		try {
+			FileUtils.copyFile(old_file, file);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		test.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+		System.out.println("fail script screnshort");
 		//System.out.println("****onTestFailure*****"+result.getName());
 	}
+
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
