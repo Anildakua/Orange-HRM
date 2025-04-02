@@ -17,6 +17,17 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- TestScripts.SanctionLeave -->
+      <class name="TestScripts.ApplyLeave">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="apply"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestScripts.ApplyLeave -->
       <class name="TestScripts.VerifyLeave">
         <methods>
           <include name="beforeTest"/>
@@ -28,6 +39,17 @@
           <include name="verify"/>
         </methods>
       </class> <!-- TestScripts.VerifyLeave -->
+      <class name="TestScripts.LeaveBalance">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="leave"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestScripts.LeaveBalance -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

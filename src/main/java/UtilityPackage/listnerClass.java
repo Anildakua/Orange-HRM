@@ -52,12 +52,11 @@ public class listnerClass extends BaseClass implements ITestListener {
 		test=extend.createTest(result.getName());
 		test.log(Status.FAIL, "Test case fail :"+result.getName());
 		
-		String path="./Screenshots/"+result.getName()+".JPG";
 		
-		System.out.println("fail script");
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File old_file = ts.getScreenshotAs(OutputType.FILE);
-		File file=new File(path);
+		File file=new File("./Screenshots/"+result.getName()+".JPG");
+		String absolutePath= file.getAbsolutePath();
 		try {
 			FileUtils.copyFile(old_file, file);
 		} catch (IOException e) {
@@ -65,8 +64,8 @@ public class listnerClass extends BaseClass implements ITestListener {
 			e.printStackTrace();
 		}
 
-		test.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-		System.out.println("fail script screnshort");
+		test.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(absolutePath).build());
+	
 		//System.out.println("****onTestFailure*****"+result.getName());
 	}
 
