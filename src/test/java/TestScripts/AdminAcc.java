@@ -66,9 +66,9 @@ public void login() throws Exception {
 		pim._new_password();
 		pim.con_password();
 		wait.until(ExpectedConditions.elementToBeClickable(pim.save_button()));
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		pim.save_button().click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		}else {
 			System.out.println("I am not Homepage");
 		}
