@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.VerifyLeave">
+      <class name="TestScripts.AdminAcc">
         <methods>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="verify"/>
+          <include name="userCredential"/>
         </methods>
-      </class> <!-- TestScripts.VerifyLeave -->
+      </class> <!-- TestScripts.AdminAcc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

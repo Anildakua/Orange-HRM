@@ -1,0 +1,9 @@
+17:21:02.201 [main] INFO  TestScripts.AdminAcc - Window Maximized
+17:21:02.203 [main] TRACE TestScripts.AdminAcc - This is a TRACE log
+17:21:02.203 [main] DEBUG TestScripts.AdminAcc - This is a DEBUG log
+17:21:02.203 [main] INFO  TestScripts.AdminAcc - This is an INFO log
+17:21:02.203 [main] WARN  TestScripts.AdminAcc - This is a WARN log
+17:21:02.203 [main] ERROR TestScripts.AdminAcc - This is an ERROR log
+17:21:02.736 [main] INFO  TestScripts.AdminAcc - Now Logging IN Orange HRM
+17:21:06.571 [main] DEBUG TestScripts.AdminAcc - Now Clicking on PIM module
+17:21:07.645 [main] INFO  TestScripts.AdminAcc - Adding Employee Details
