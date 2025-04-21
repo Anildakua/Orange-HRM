@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests" >
+<listeners>
+<listener class-name="UtilityPackage.listnerClass"></listener>
+</listeners>
+  <test name="TestinCromeBrowser">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="TestScripts.AdminAcc"/>
+      <class name="TestScripts.EmployeeAcc"/>
+      <class name="TestScripts.LeaveBalance"/>
+      <class name="TestScripts.ApplyLeave"/>
+      <class name="TestScripts.SanctionLeave"/>
+      <class name="TestScripts.VerifyLeave"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TestInEdgeBrowser">
+    <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="TestScripts.AdminAcc"/>
+      <class name="TestScripts.EmployeeAcc"/>
+      <class name="TestScripts.LeaveBalance"/>
+      <class name="TestScripts.ApplyLeave"/>
+      <class name="TestScripts.SanctionLeave"/>
+      <class name="TestScripts.VerifyLeave"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

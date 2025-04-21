@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
-       <Properties>
-<Property name="basePath">./logs</Property>
-</Properties>
  
+  <!-- Define properties -->
+  <Properties>
+    <Property name="basePath">./logs</Property>
+  </Properties>
+
   <Appenders>
-      <RollingFile name="RollingFile" fileName="${basePath}/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
-     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-		<SizeBasedTriggeringPolicy size="500 KB"/>
-          </RollingFile>
+    <!-- Console Appender -->
     <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        <PatternLayout pattern ="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     </Console>
+    
+    <!-- Rolling File Appender using properties -->
+    <RollingFile name="File" fileName="${basePath}/automation.log" 
+    filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log">
+       <PatternLayout Pattern="%d{HH:mm:ss.SSS} [%t] %-5level %loggger{36} - %msg%n"/>
+         <SizeBasedTriggeringPolicy size="900KB"/>
+         </RollingFile>
   </Appenders>
+
   <Loggers>
-  <Logger name="TestScripts.AdminAcc" level="trace" additivity="false">
-    <AppenderRef ref="RollingFile"/>
-    <AppenderRef ref="Console"/>
-</Logger>
-<Logger name="TestScripts.EmployeeAcc" level="trace" additivity="false">
-    <AppenderRef ref="RollingFile"/>
-    <AppenderRef ref="Console"/>
-</Logger>
-<Logger name="TestScripts.ApplyLeave" level="trace" additivity="false">
-    <AppenderRef ref="RollingFile"/>
-    <AppenderRef ref="Console"/>
-</Logger>
-    <Root level="trace">
+    <!-- Root logger references the console and rolling appenders -->
+    <Root level="debug">
+      <!--<AppenderRef ref="Console"/> -->
       <AppenderRef ref="File"/>
     </Root>
   </Loggers>
+
 </Configuration>
