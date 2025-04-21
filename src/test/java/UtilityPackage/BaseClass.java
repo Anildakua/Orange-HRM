@@ -6,6 +6,8 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -29,6 +31,7 @@ import POMpackage.HomepagePOM;
 public class BaseClass {
 
 	public static WebDriver driver;
+	public static Logger logger ;
 	public propartieClass pr=new propartieClass();
 	
 	@BeforeTest
@@ -44,7 +47,8 @@ public class BaseClass {
 	}
 	
 	@BeforeClass
-	public void beforeClass() throws Exception {
+	public void beforeClass() {
+		 logger = LogManager.getLogger(this.getClass());
 	        
 	}
 	

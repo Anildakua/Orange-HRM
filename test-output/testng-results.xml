@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
+<testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T17:18:56 IST" name="Suite" finished-at="2025-04-02T17:20:41 IST" duration-ms="105817">
+  <suite started-at="2025-04-21T14:12:19 IST" name="Suite" finished-at="2025-04-21T14:14:12 IST" duration-ms="113138">
     <groups>
     </groups>
-    <test started-at="2025-04-02T17:18:56 IST" name="Test" finished-at="2025-04-02T17:20:41 IST" duration-ms="105817">
+    <test started-at="2025-04-21T14:12:19 IST" name="Test" finished-at="2025-04-21T14:14:12 IST" duration-ms="113138">
       <class name="TestScripts.LeaveBalance">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="beforeClass" finished-at="2025-04-02T17:19:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:56 IST" name="beforeClass" finished-at="2025-04-21T14:12:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="login" finished-at="2025-04-02T17:19:26 IST" duration-ms="396" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:56 IST" name="login" finished-at="2025-04-21T14:12:58 IST" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="beforeMethod" finished-at="2025-04-02T17:19:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:56 IST" name="beforeMethod" finished-at="2025-04-21T14:12:56 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="afterMethod" finished-at="2025-04-02T17:19:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:58 IST" name="afterMethod" finished-at="2025-04-21T14:12:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="leave()[pri:1, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="leave" finished-at="2025-04-02T17:19:41 IST" duration-ms="15002" status="FAIL">
+        <test-method signature="leave()[pri:1, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:58 IST" name="leave" finished-at="2025-04-21T14:13:05 IST" duration-ms="6326" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']"}
-  (Session info: chrome=134.0.6998.178)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-topbar-body-nav-tab-item']"}
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7]]>
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//span[@class='oxd-topbar-body-nav-tab-item'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']"}
-  (Session info: chrome=134.0.6998.178)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='oxd-topbar-body-nav-tab-item']"}
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-button-margin']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//span[@class='oxd-topbar-body-nav-tab-item'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -62,8 +62,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at TestScripts.LeaveBalance.leave(LeaveBalance.java:57)
+at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+at TestScripts.LeaveBalance.leave(LeaveBalance.java:56)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -96,91 +96,67 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- leave -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:26 IST" name="beforeMethod" finished-at="2025-04-02T17:19:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:12:58 IST" name="beforeMethod" finished-at="2025-04-21T14:12:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:41 IST" name="afterMethod" finished-at="2025-04-02T17:19:41 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.LeaveBalance@6200f9cb]" started-at="2025-04-02T17:19:41 IST" name="afterClass" finished-at="2025-04-02T17:19:42 IST" duration-ms="901" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:13:05 IST" name="afterClass" finished-at="2025-04-21T14:13:06 IST" duration-ms="837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.LeaveBalance@69453e37]" started-at="2025-04-21T14:13:05 IST" name="afterMethod" finished-at="2025-04-21T14:13:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- TestScripts.LeaveBalance -->
       <class name="TestScripts.SanctionLeave">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="beforeClass" finished-at="2025-04-02T17:20:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:27 IST" name="beforeClass" finished-at="2025-04-21T14:13:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="login" finished-at="2025-04-02T17:20:04 IST" duration-ms="117" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:27 IST" name="login" finished-at="2025-04-21T14:13:28 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="beforeMethod" finished-at="2025-04-02T17:20:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:27 IST" name="beforeMethod" finished-at="2025-04-21T14:13:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="afterMethod" finished-at="2025-04-02T17:20:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:28 IST" name="afterMethod" finished-at="2025-04-21T14:13:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="beforeMethod" finished-at="2025-04-02T17:20:04 IST" duration-ms="0" status="PASS">
+        <test-method signature="leave()[pri:1, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:28 IST" name="leave" finished-at="2025-04-21T14:13:34 IST" duration-ms="6356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leave -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:28 IST" name="beforeMethod" finished-at="2025-04-21T14:13:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="leave()[pri:1, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:04 IST" name="leave" finished-at="2025-04-02T17:20:18 IST" duration-ms="13953" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:34 IST" name="afterMethod" finished-at="2025-04-21T14:13:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.SanctionLeave@ae13544]" started-at="2025-04-21T14:13:34 IST" name="afterClass" finished-at="2025-04-21T14:13:50 IST" duration-ms="15743" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='oxd-button oxd-button--medium oxd-button--label-success oxd-table-cell-action-space']"}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//button[@class='oxd-button oxd-button--medium oxd-button--label-success oxd-table-cell-action-space']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.linkText: Logout' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='oxd-button oxd-button--medium oxd-button--label-success oxd-table-cell-action-space']"}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//button[@class='oxd-button oxd-button--medium oxd-button--label-success oxd-table-cell-action-space']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at TestScripts.SanctionLeave.leave(SanctionLeave.java:49)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.linkText: Logout' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at UtilityPackage.BaseClass.afterClass(BaseClass.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -197,61 +173,86 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=Logout, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 26 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- leave -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:18 IST" name="afterClass" finished-at="2025-04-02T17:20:19 IST" duration-ms="892" status="PASS">
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.SanctionLeave@69453e37]" started-at="2025-04-02T17:20:18 IST" name="afterMethod" finished-at="2025-04-02T17:20:18 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- TestScripts.SanctionLeave -->
       <class name="TestScripts.ApplyLeave">
-        <test-method signature="login()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:42 IST" name="login" finished-at="2025-04-02T17:19:43 IST" duration-ms="433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:42 IST" name="beforeClass" finished-at="2025-04-02T17:19:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="beforeClass" finished-at="2025-04-21T14:13:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:42 IST" name="beforeMethod" finished-at="2025-04-02T17:19:42 IST" duration-ms="0" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="login" finished-at="2025-04-21T14:13:06 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="beforeMethod" finished-at="2025-04-21T14:13:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:43 IST" name="afterMethod" finished-at="2025-04-02T17:19:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="afterMethod" finished-at="2025-04-21T14:13:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="apply()[pri:1, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:43 IST" name="apply" finished-at="2025-04-02T17:19:48 IST" duration-ms="5715" status="FAIL">
+        <test-method signature="apply()[pri:1, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="apply" finished-at="2025-04-21T14:13:12 IST" duration-ms="5638" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Leave']"}
-  (Session info: chrome=134.0.6998.178)
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//span[text()='Leave']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7]]>
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//span[text()='Leave'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Leave']"}
-  (Session info: chrome=134.0.6998.178)
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//span[text()='Leave']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//span[text()='Leave'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -268,7 +269,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
 at POMpackage.HomepagePOM.Leave(HomepagePOM.java:54)
 at TestScripts.ApplyLeave.apply(ApplyLeave.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -303,15 +304,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apply -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:43 IST" name="beforeMethod" finished-at="2025-04-02T17:19:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:06 IST" name="beforeMethod" finished-at="2025-04-21T14:13:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:49 IST" name="afterMethod" finished-at="2025-04-02T17:19:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:12 IST" name="afterMethod" finished-at="2025-04-21T14:13:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.ApplyLeave@2002fc1d]" started-at="2025-04-02T17:19:49 IST" name="afterClass" finished-at="2025-04-02T17:20:04 IST" duration-ms="15696" status="FAIL">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.ApplyLeave@6f4a47c7]" started-at="2025-04-21T14:13:12 IST" name="afterClass" finished-at="2025-04-21T14:13:27 IST" duration-ms="15658" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-userdropdown-name']/../..' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -320,7 +321,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-userdropdown-name']/../..' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at UtilityPackage.BaseClass.afterClass(BaseClass.java:66)
+at UtilityPackage.BaseClass.afterClass(BaseClass.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -347,14 +348,14 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']/../.."}
-  (Session info: chrome=134.0.6998.178)
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']/../..}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//p[@class='oxd-userdropdown-name']/../.., using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -371,7 +372,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
@@ -387,79 +388,78 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
         </test-method> <!-- afterClass -->
       </class> <!-- TestScripts.ApplyLeave -->
       <class name="TestScripts.EmployeeAcc">
-        <test-method signature="login()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:22 IST" name="login" finished-at="2025-04-02T17:19:23 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:22 IST" name="beforeClass" finished-at="2025-04-02T17:19:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:43 IST" name="beforeClass" finished-at="2025-04-21T14:12:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:22 IST" name="beforeMethod" finished-at="2025-04-02T17:19:22 IST" duration-ms="0" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:43 IST" name="login" finished-at="2025-04-21T14:12:44 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:43 IST" name="beforeMethod" finished-at="2025-04-21T14:12:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="add_emp()[pri:1, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:23 IST" name="add_emp" finished-at="2025-04-02T17:19:23 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:44 IST" name="afterMethod" finished-at="2025-04-21T14:12:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="add_emp()[pri:1, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:44 IST" name="add_emp" finished-at="2025-04-21T14:12:44 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_emp -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:23 IST" name="afterMethod" finished-at="2025-04-02T17:19:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:23 IST" name="beforeMethod" finished-at="2025-04-02T17:19:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:44 IST" name="beforeMethod" finished-at="2025-04-21T14:12:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:23 IST" name="afterMethod" finished-at="2025-04-02T17:19:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:44 IST" name="afterMethod" finished-at="2025-04-21T14:12:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.EmployeeAcc@20d525]" started-at="2025-04-02T17:19:23 IST" name="afterClass" finished-at="2025-04-02T17:19:26 IST" duration-ms="2973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestScripts.EmployeeAcc -->
-      <class name="TestScripts.VerifyLeave">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:19 IST" name="beforeClass" finished-at="2025-04-02T17:20:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:19 IST" name="login" finished-at="2025-04-02T17:20:20 IST" duration-ms="410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:19 IST" name="beforeMethod" finished-at="2025-04-02T17:20:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:20 IST" name="afterMethod" finished-at="2025-04-02T17:20:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verify()[pri:1, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:20 IST" name="verify" finished-at="2025-04-02T17:20:25 IST" duration-ms="5715" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.EmployeeAcc@2002fc1d]" started-at="2025-04-21T14:12:44 IST" name="afterClass" finished-at="2025-04-21T14:12:56 IST" duration-ms="12928" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Leave']"}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//span[text()='Leave']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (dc5c013b12d4d7cab2aafe3775ecee8f)] -> link text: Logout] (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Leave']"}
-  (Session info: chrome=134.0.6998.178)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (dc5c013b12d4d7cab2aafe3775ecee8f)] -> link text: Logout] (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at UtilityPackage.BaseClass.afterClass(BaseClass.java:72)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=135.0.7049.96)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//span[text()='Leave']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=Logout, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -476,9 +476,129 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at POMpackage.HomepagePOM.Leave(HomepagePOM.java:54)
-at TestScripts.VerifyLeave.verify(VerifyLeave.java:45)
+at jdk.proxy2/jdk.proxy2.$Proxy35.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestScripts.EmployeeAcc -->
+      <class name="TestScripts.VerifyLeave">
+        <test-method signature="login()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:13:50 IST" name="login" finished-at="2025-04-21T14:14:05 IST" duration-ms="15666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:13:50 IST" name="beforeMethod" finished-at="2025-04-21T14:13:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:13:50 IST" name="beforeClass" finished-at="2025-04-21T14:13:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="verify()[pri:1, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:14:05 IST" name="verify" finished-at="2025-04-21T14:14:11 IST" duration-ms="5695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:14:05 IST" name="beforeMethod" finished-at="2025-04-21T14:14:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:14:05 IST" name="afterMethod" finished-at="2025-04-21T14:14:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:14:11 IST" name="afterMethod" finished-at="2025-04-21T14:14:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.VerifyLeave@3d34d211]" started-at="2025-04-21T14:14:11 IST" name="afterClass" finished-at="2025-04-21T14:14:12 IST" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestScripts.VerifyLeave -->
+      <class name="TestScripts.AdminAcc">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:19 IST" name="beforeTest" finished-at="2025-04-21T14:12:24 IST" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="beforeClass" finished-at="2025-04-21T14:12:24 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="login" finished-at="2025-04-21T14:12:24 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="beforeMethod" finished-at="2025-04-21T14:12:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="afterMethod" finished-at="2025-04-21T14:12:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="beforeMethod" finished-at="2025-04-21T14:12:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="add_emp()[pri:1, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:24 IST" name="add_emp" finished-at="2025-04-21T14:12:37 IST" duration-ms="12145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_emp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:37 IST" name="afterMethod" finished-at="2025-04-21T14:12:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="userCredential()[pri:2, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:37 IST" name="userCredential" finished-at="2025-04-21T14:12:42 IST" duration-ms="5670" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type for hints...']"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//input[@placeholder='Type for hints...'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Type for hints...']"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc5c013b12d4d7cab2aafe3775ecee8f, findElement {value=//input[@placeholder='Type for hints...'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56294/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dc5c013b12d4d7cab2aafe3775ecee8f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy35.sendKeys(Unknown Source)
+at TestScripts.AdminAcc.userCredential(AdminAcc.java:83)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -510,140 +630,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:20 IST" name="beforeMethod" finished-at="2025-04-02T17:20:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:26 IST" name="afterMethod" finished-at="2025-04-02T17:20:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.VerifyLeave@6f4a47c7]" started-at="2025-04-02T17:20:26 IST" name="afterClass" finished-at="2025-04-02T17:20:41 IST" duration-ms="15675" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-userdropdown-name']/../..' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[@class='oxd-userdropdown-name']/../..' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at UtilityPackage.BaseClass.afterClass(BaseClass.java:66)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']/../.."}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.0', revision: 'ac342546e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ed6d276d4699797ba40c9bcdc395e8f7, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']/../..}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57218/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed6d276d4699797ba40c9bcdc395e8f7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- TestScripts.VerifyLeave -->
-      <class name="TestScripts.AdminAcc">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:18:56 IST" name="beforeTest" finished-at="2025-04-02T17:18:59 IST" duration-ms="3701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:18:59 IST" name="beforeClass" finished-at="2025-04-02T17:18:59 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:18:59 IST" name="beforeMethod" finished-at="2025-04-02T17:18:59 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:18:59 IST" name="login" finished-at="2025-04-02T17:19:00 IST" duration-ms="473" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:00 IST" name="afterMethod" finished-at="2025-04-02T17:19:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:00 IST" name="beforeMethod" finished-at="2025-04-02T17:19:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="add_emp()[pri:1, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:00 IST" name="add_emp" finished-at="2025-04-02T17:19:15 IST" duration-ms="14920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_emp -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:15 IST" name="afterMethod" finished-at="2025-04-02T17:19:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="userCredential()[pri:2, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:15 IST" name="userCredential" finished-at="2025-04-02T17:19:22 IST" duration-ms="6750" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- userCredential -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:15 IST" name="beforeMethod" finished-at="2025-04-02T17:19:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:37 IST" name="beforeMethod" finished-at="2025-04-21T14:12:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:22 IST" name="afterMethod" finished-at="2025-04-02T17:19:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:42 IST" name="afterMethod" finished-at="2025-04-21T14:12:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:19:22 IST" name="afterClass" finished-at="2025-04-02T17:19:22 IST" duration-ms="883" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:12:42 IST" name="afterClass" finished-at="2025-04-21T14:12:43 IST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestScripts.AdminAcc@38afe297]" started-at="2025-04-02T17:20:41 IST" name="afterTest" finished-at="2025-04-02T17:20:41 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestScripts.AdminAcc@23348b5d]" started-at="2025-04-21T14:14:12 IST" name="afterTest" finished-at="2025-04-21T14:14:12 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
