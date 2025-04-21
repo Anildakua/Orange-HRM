@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.AdminAcc">
+      <class name="TestScripts.EmployeeAcc">
         <methods>
-          <include name="beforeTest"/>
+          <include name="add_emp"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterClass"/>
           <include name="afterTest"/>
           <include name="beforeMethod"/>
+          <include name="login"/>
           <include name="beforeClass"/>
-          <include name="userCredential"/>
         </methods>
-      </class> <!-- TestScripts.AdminAcc -->
+      </class> <!-- TestScripts.EmployeeAcc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
