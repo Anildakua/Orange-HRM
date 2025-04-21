@@ -24,7 +24,6 @@ import UtilityPackage.listnerClass;
 import UtilityPackage.propartieClass;
 @Listeners(listnerClass.class)
 public class AdminAcc extends BaseClass{
-    private static final Logger logger = LogManager.getLogger(AdminAcc.class);
 	HomepagePOM home;
 	AdminPOM admin;
 	

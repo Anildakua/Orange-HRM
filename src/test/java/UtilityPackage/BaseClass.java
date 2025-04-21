@@ -37,9 +37,9 @@ public class BaseClass {
 	public propartieClass pr=new propartieClass();
 	
 	@BeforeTest
-	@Parameters("browser")
-	public void beforeTest(String browser) {
-		
+	//@Parameters("browser")
+	public void beforeTest() throws Exception {
+		String browser = pr.proparties("browser");
 		switch (browser) {
 		case "Chrome":
 			driver=new ChromeDriver();break;

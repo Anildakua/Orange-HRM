@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-21T16:55:00 IST" name="Default suite" finished-at="2025-04-21T16:55:26 IST" duration-ms="26468">
+    <groups>
+    </groups>
+    <test started-at="2025-04-21T16:55:00 IST" name="Default test" finished-at="2025-04-21T16:55:26 IST" duration-ms="26468">
+      <class name="TestScripts.AdminAcc">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:00 IST" name="beforeTest" finished-at="2025-04-21T16:55:04 IST" duration-ms="4290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:04 IST" name="beforeClass" finished-at="2025-04-21T16:55:05 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:05 IST" name="beforeMethod" finished-at="2025-04-21T16:55:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:05 IST" name="login" finished-at="2025-04-21T16:55:05 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:05 IST" name="afterMethod" finished-at="2025-04-21T16:55:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:05 IST" name="beforeMethod" finished-at="2025-04-21T16:55:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="add_emp()[pri:1, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:05 IST" name="add_emp" finished-at="2025-04-21T16:55:20 IST" depends-on-methods="TestScripts.AdminAcc.login" duration-ms="14641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_emp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:20 IST" name="afterMethod" finished-at="2025-04-21T16:55:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="userCredential()[pri:2, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:20 IST" name="userCredential" finished-at="2025-04-21T16:55:25 IST" depends-on-methods="TestScripts.AdminAcc.add_emp" duration-ms="5935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCredential -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:20 IST" name="beforeMethod" finished-at="2025-04-21T16:55:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:25 IST" name="afterClass" finished-at="2025-04-21T16:55:26 IST" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:25 IST" name="afterMethod" finished-at="2025-04-21T16:55:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestScripts.AdminAcc@41a2befb]" started-at="2025-04-21T16:55:26 IST" name="afterTest" finished-at="2025-04-21T16:55:26 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestScripts.AdminAcc -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

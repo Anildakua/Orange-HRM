@@ -20,7 +20,6 @@ import UtilityPackage.excelUtil;
 
 
 public class ApplyLeave extends BaseClass {
-	private static final Logger logger = LogManager.getLogger(ApplyLeave.class);
 
 	HomepagePOM home;
 	AdminPOM admin;

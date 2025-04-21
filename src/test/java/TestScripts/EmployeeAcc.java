@@ -18,7 +18,6 @@ import UtilityPackage.excelUtil;
 import UtilityPackage.propartieClass;
 
 public class EmployeeAcc extends BaseClass {
-    private static final Logger logger = LogManager.getLogger(EmployeeAcc.class);
 	HomepagePOM home;
 	AdminPOM admin;
 	@Test(priority = 0)
