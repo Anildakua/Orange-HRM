@@ -1,0 +1,24 @@
+14:18:13.149 [main] INFO  TestScripts.AdminAcc - Starting login test case...
+14:18:13.152 [main] DEBUG TestScripts.AdminAcc - Fetched credentials from properties file
+14:18:13.172 [main] DEBUG TestScripts.AdminAcc - Waiting for username field to be visible
+14:18:41.285 [main] INFO  TestScripts.AdminAcc - Starting login test case...
+14:18:41.287 [main] DEBUG TestScripts.AdminAcc - Fetched credentials from properties file
+14:18:41.297 [main] DEBUG TestScripts.AdminAcc - Waiting for username field to be visible
+14:18:41.931 [main] INFO  TestScripts.AdminAcc - Login submitted with username: Admin
+14:18:41.931 [main] INFO  TestScripts.AdminAcc - Login test case completed
+14:18:41.941 [main] INFO  TestScripts.AdminAcc - Starting add_emp test case...
+14:18:46.202 [main] INFO  TestScripts.AdminAcc - Navigated to homepage successfully
+14:18:47.222 [main] DEBUG TestScripts.AdminAcc - Now Clicking on PIM module
+14:18:48.600 [main] INFO  TestScripts.AdminAcc - Adding Employee Details
+14:18:49.491 [main] DEBUG TestScripts.AdminAcc - Entered employee name
+14:18:49.666 [main] DEBUG TestScripts.AdminAcc - Entered username
+14:18:49.738 [main] DEBUG TestScripts.AdminAcc - Waiting to click save button
+14:18:57.819 [main] INFO  TestScripts.AdminAcc - Employee details saved successfully
+14:18:57.819 [main] INFO  TestScripts.AdminAcc - add_emp test case completed
+14:18:57.826 [main] INFO  TestScripts.AdminAcc - Starting userCredential test case...
+14:18:57.833 [main] INFO  TestScripts.AdminAcc - Successfully navigated to Admin Page
+14:19:00.928 [main] DEBUG TestScripts.AdminAcc - Entering employee name for search
+14:19:00.985 [main] DEBUG TestScripts.AdminAcc - Clicking search button
+14:19:01.019 [main] DEBUG TestScripts.AdminAcc - Editing user role
+14:19:03.648 [main] INFO  TestScripts.AdminAcc - User credentials updated successfully
+14:19:03.648 [main] INFO  TestScripts.AdminAcc - userCredential test case completed
