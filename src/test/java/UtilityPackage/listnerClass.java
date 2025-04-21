@@ -29,7 +29,7 @@ public class listnerClass extends BaseClass implements ITestListener {
 		sparkRepoter=new ExtentSparkReporter("./Reports/firstreport.html");
 		sparkRepoter.config().setDocumentTitle("OrangHRM");
 		sparkRepoter.config().setReportName("Create admin");
-		sparkRepoter.config().setTheme(Theme.STANDARD);
+		sparkRepoter.config().setTheme(Theme.DARK);
 		
 		extend=new ExtentReports();
 		extend.attachReporter(sparkRepoter);
