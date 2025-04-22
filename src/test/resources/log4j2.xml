@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="info">
  
   <!-- Define properties -->
   <Properties>
@@ -26,6 +26,7 @@
       <!--<AppenderRef ref="Console"/> -->
       <AppenderRef ref="File"/>
     </Root>
+    <Logger name="org.apache.poi" level="WARN"/>
   </Loggers>
 
 </Configuration>
