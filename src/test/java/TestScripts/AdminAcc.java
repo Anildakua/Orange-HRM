@@ -93,6 +93,7 @@ public void login() throws Exception
 			wait.until(ExpectedConditions.elementToBeClickable(pim.save_button()));
 			Thread.sleep(4000);
 			pim.save_button().click();
+			Thread.sleep(3000);
 	        logger.info("Employee details saved successfully");
 		    logger.info("add_emp test case completed");
 		}
