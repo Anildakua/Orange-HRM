@@ -72,8 +72,7 @@ public class pim_POM {
 		return Cre_log_details;
 	 }
 	 
-	 @FindBy (xpath = "//input[@class='oxd-input oxd-input--active']")
-	 List<WebElement> user_credentials;
+	
 	 
 	 
 	 @FindBy (xpath = "(//input[@class='oxd-input oxd-input--active'])[3]")
@@ -83,18 +82,18 @@ public class pim_POM {
 			return username;
 		 }
 	 
-	 public List<WebElement> _new_password() {
-		 if(user_credentials.size() >=3) {
-				user_credentials.get(3).sendKeys("Rocky@123");
-			}
-			return user_credentials;
+	 @FindBy (xpath = "(//input[@type='password'])[1]")
+	 WebElement new_password;
+	 
+	 public WebElement new_password() {
+			return new_password;
 		 }
 	 
-	 public List<WebElement> con_password() {
-		 if(user_credentials.size() >=3) {
-				user_credentials.get(3).sendKeys("Rocky@123");
-			}
-			return user_credentials;
+	 @FindBy (xpath = "(//input[@type='password'])[2]")
+	 WebElement con_password;
+	 
+	 public WebElement con_password() {
+			return con_password;
 		 }
 	 
 	 @FindBy (xpath = "//button[@type='submit']")

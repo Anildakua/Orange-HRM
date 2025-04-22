@@ -38,9 +38,11 @@ public class BaseClass {
 	
 	@BeforeTest
 	//@Parameters("browser")
-	public void beforeTest() throws Exception {
-		String browser = pr.proparties("browser");
-		switch (browser) {
+	public void beforeTest() throws Exception 
+	{
+		String browser = pr.proparties("browser");     //get the spesific browser
+		switch (browser) 
+		{
 		case "Chrome":
 			driver=new ChromeDriver();break;
 		case "Edge":
@@ -48,35 +50,41 @@ public class BaseClass {
 		default:
 			System.out.println("its not a valid browser");break;
 		}
-		     //open the chrome browser 
+		//open the browser      
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		try {
+		try 
+		{
 			driver.get(pr.proparties("URL"));
-		} catch (Exception e) {
+		} catch (Exception e) 
+		{
 			System.out.println("Not get the URL proparties file we get the :"+e);
 		}
 	}
 	
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() 
+	{
 		 logger = LogManager.getLogger(this.getClass());
 	        
 	}
 	
 	@BeforeMethod
-	public void beforeMethod() {
+	public void beforeMethod() 
+	{
 	 
 	}
 	
 	
 	@AfterMethod
-	public void afterMethod() throws InterruptedException {
+	public void afterMethod() throws InterruptedException 
+	{
 		
 
 	}
 	@AfterClass
-	public void afterClass() {
+	public void afterClass() 
+	{
 		HomepagePOM hm=new HomepagePOM(driver);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(hm.user_dropdown()));
@@ -87,7 +95,8 @@ public class BaseClass {
 	}
 	
 	@AfterTest
-	public void afterTest() {
+	public void afterTest() 
+	{
 		driver.quit();
 	}
 

@@ -123,8 +123,8 @@ public class loginPage extends BaseClass {
 			}
 		
 		pim.new_username().sendKeys(user_name1);
-		pim._new_password();
-		pim.con_password();
+		pim.new_password().sendKeys(excelUtil.data("Sheet1", 2, 2));
+		pim.con_password().sendKeys(excelUtil.data("Sheet1", 2, 2));
 		Thread.sleep(2000);
 		pim.save_button().click();
 		String name=pr.proparties("Firstname");
